@@ -9,3 +9,18 @@
     --light-brown: #5D3315;
     --dark-brown: #41220C;
 }
+
+@font-face {
+    font-family: sunwish;
+    src: url(fonts/sunwish.ttf);
+}
+
+@font-face {
+    font-family: sansita;
+    src: url(fonts/sansita.ttf);
+}
+
+@font-face {
+    font-family: decorya;
+    src: url(fonts/decorya.ttf);
+}
