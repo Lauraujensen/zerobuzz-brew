@@ -92,6 +92,15 @@ body {
     color: var(--curry);
 }
 
+#forside{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#shop, #om-os, #anmeldelser{
+    font-weight: 500;
+}
+
 .logo-text{
     position: absolute;
     top: 50%;

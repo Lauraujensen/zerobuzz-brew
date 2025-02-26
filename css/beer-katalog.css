@@ -62,7 +62,7 @@
     display: flex;
     justify-content: flex-start; /* Sørger for at logo + menu starter fra venstre */
     align-items: center;
-    background-color: #f1ead529;
+    background-color: var(--darker-green);
     padding: 0.5rem;
     position: fixed;
     width: 100%;
@@ -92,4 +92,67 @@
 
 .nav-links a:hover {
     color: var(--curry);
+}
+
+#shop{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#forside, #om-os, #anmeldelser{
+    font-weight: 500;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #73885A;
+    width: 25rem;
+    height: 45rem;
+    z-index: -1;
+    border-radius: 4rem;
+
+    display: flex; /* Gør containeren til en flexbox */
+    justify-content: center; /* Centrerer billedet vandret */
+    align-items: center; /* Centrerer billedet lodret */
+}
+
+.container img {
+    max-height: 100%; /* Sørger for, at billedet ikke bliver højere end containeren */
+    width: 80rem;
+    position: absolute;
+    left: -114%;
+    top: 7rem;
+}
+
+h1{
+    font-family: sansita;
+    font-size: 4.2rem;
+    color: var(--creme);
+    z-index: 2;
+    position: absolute;
+    top: 13%;
+}
+
+h2{
+    font-family: roboto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--creme);
+    z-index: 2;
+    position: absolute;
+    top: 78%;
+}
+
+h3{
+    font-family: roboto;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--creme);
+    z-index: 2;
+    position: absolute;
+    top: 84%;
+    text-decoration: underline;
 }

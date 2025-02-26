@@ -91,3 +91,12 @@ body {
 .nav-links a:hover {
     color: var(--curry);
 }
+
+#anmelderlser{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#forside, #om-os, #shop{
+    font-weight: 500;
+}
