@@ -24,3 +24,8 @@
     font-family: decorya;
     src: url(fonts/decorya.ttf);
 }
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/roboto.ttf);
+}
