@@ -91,3 +91,32 @@ body {
 .nav-links a:hover {
     color: var(--curry);
 }
+
+.logo-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F1EAD5;
+    font-size: 5rem;
+    line-height: 6rem;
+}
+
+h1{
+    font-family: decorya;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 10rem;
+}
+
+h2{
+    font-family: sunwish;
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+}
+
+#logo{
+    width: 14rem;
+}
