@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --curry: #DC9924;
+    --light-yellow: #FDE8BE;
+    --creme: #F1EAD5;
+    --lighter-green: #C9D9B9;
+    --light-green: #73885A;
+    --dark-green: #42592D;
+    --darker-green: #192809;
+    --light-brown: #5D3315;
+    --dark-brown: #41220C;
+}
+
+@font-face {
+    font-family: sunwish;
+    src: url(fonts/sunwish.ttf);
+}
+
+@font-face {
+    font-family: sansita;
+    src: url(fonts/sansita.ttf);
+}
+
+@font-face {
+    font-family: decorya;
+    src: url(fonts/decorya.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/roboto.ttf);
+}
+
+body {
+    background-image: url(../img/#);
+    background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
+  }
+
+  .logo{
+    margin: 1rem;
+    padding-top: 4rem;
+  }
+
+  #kurv{
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+  }
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: flex-start; /* Sørger for at logo + menu starter fra venstre */
+    align-items: center;
+    background-color: #f1ead529;
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 26rem;
+}
+
+.nav-links li {
+    margin: 0 3rem;
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: var(--creme);
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: var(--curry);
+}
