@@ -46,15 +46,12 @@
       }
   
 
-.logo{
-    margin: 1rem;
-    padding-top: 4rem;
-  }
-
-  #kurv{
+#kurv{
     display: flex;
     align-items: center;
-    margin-left: 1.5rem;
+    margin-left: 4.8rem;
+    top: 0.4rem;
+    width: 3.5rem;
   }
 
 /* Navbar styling */
@@ -62,19 +59,27 @@
     display: flex;
     justify-content: flex-start; /* Sørger for at logo + menu starter fra venstre */
     align-items: center;
-    background-color: var(--darker-green);
-    padding: 0.5rem;
+    background-color: #192809b3;
+    padding: 0.8rem 1rem; /* Gør navbaren smallere i højden */
+    height: 3.8rem; /* Sæt en fast højde, hvis nødvendigt */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
 }
 
+.logo img{
+    position: fixed;
+    top: 0.5rem;
+    width: 3.2rem;
+    margin-left: 0.5rem;
+ } 
+
 /* Navigation links */
 .nav-links {
     list-style: none;
     display: flex;
-    margin-left: 26rem;
+    margin-left: 35.5rem;
 }
 
 .nav-links li {
@@ -86,7 +91,7 @@
 .nav-links a {
     color: var(--creme);
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     transition: 0.3s ease-in-out;
 }
 
@@ -105,14 +110,15 @@
 
 .container {
     position: absolute;
-    top: 50%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #73885A;
     width: 25rem;
     height: 45rem;
     z-index: -1;
-    border-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
 
     display: flex; /* Gør containeren til en flexbox */
     justify-content: center; /* Centrerer billedet vandret */
@@ -124,7 +130,7 @@
     width: 80rem;
     position: absolute;
     left: -114%;
-    top: 7rem;
+    top: 5rem;
 }
 
 h1{
@@ -133,7 +139,7 @@ h1{
     color: var(--creme);
     z-index: 2;
     position: absolute;
-    top: 13%;
+    top: 11%;
 }
 
 h2{
@@ -143,7 +149,7 @@ h2{
     color: var(--creme);
     z-index: 2;
     position: absolute;
-    top: 78%;
+    top: 82%;
 }
 
 h3{
@@ -153,6 +159,6 @@ h3{
     color: var(--creme);
     z-index: 2;
     position: absolute;
-    top: 84%;
+    top: 87%;
     text-decoration: underline;
 }
