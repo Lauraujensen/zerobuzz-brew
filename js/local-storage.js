@@ -1,102 +1,102 @@
-"use strict";
+"use strict"; 
 
-//opretter en indkøbskurv med et array bestående af objects
-// cart er global variabel som kan tilgås alle steder i koden
+// Opretter en indkøbskurv med et array bestående af objects
 let cart = [
-    {type: "coffee", quantity: 0, price: 10, total: 0},
-    {type: "americano", quantity: 0, price: 12, total: 0},
-    {type: "espresso", quantity: 0, price: 15, total: 0}
+    { type: "coffee", quantity: 0, price: 10, total: 0 },
+    { type: "americano", quantity: 0, price: 18, total: 0 },
+    { type: "espresso", quantity: 0, price: 22, total: 0 }
 ];
 
-//gemmer kurvens indhold i browseren localStorage
-function saveCartToLocalStorage(){
-localStorage.setItem('indkoebskurv', JSON.stringify());
+// Gemmer kurvens indhold i localStorage
+function saveCartToLocalStorage() {
+    localStorage.setItem('indkoebskurv', JSON.stringify(cart));
 }
 
-//Henter kurvens indhold fra localStorage ved sideindlæsning
-function loadCartFromLocalStorage(){
-const storedCart = localStorage.getItem('indkoebskurv');
-if(storedCart) {
-    cart =JSON.parse(storedCart); //konvertere strengen tilbage til et (object)array
-    updateUIFromCart() //Opdatere UI med de hentede data
-}
+// Henter kurvens indhold fra localStorage ved sideindlæsning
+function loadCartFromLocalStorage() {
+    const storedCart = localStorage.getItem('indkoebskurv');
+    if (storedCart) {
+        cart = JSON.parse(storedCart); // Konverterer string til array
+        updateUIFromCart(); // Opdaterer UI med hentede data
+    }
 }
 
-updateUIFromCart(){
+// Opdaterer UI med kurvens data
+function updateUIFromCart() {
     cart.forEach(hvert => {
         let quantityField = document.getElementById(hvert.type);
-        let totalField = document.getElementById(hvert.type+"-total");
+        let totalField = document.getElementById(hvert.type + "-total");
 
-        if(quantityField && totalField) {
-            quantityField.value =hvert.quantity;
-            totalField.value = hvert.quantity;
+        if (quantityField && totalField) {
+            quantityField.value = hvert.quantity;
+            totalField.value = hvert.total; // Rettelse: Bruger hvert.total
         }
-        
-    }
-    function updateUIFromCart() {
-
-    })
+    });
+    totalPrice();
 }
 
-function addToCart(product){
-    let produkt = cart.find(hvert => hvert.type === produkt);
+// Tilføjer et produkt til kurven
+function addToCart(produkt) {
+    let spladd = cart.find(hvert => hvert.type === produkt);
     
-
-    if(produkt) {
-        produkt.quantity++;
-        updateTotalPrice(produkt);
-        saveCartToLocalStorage();
-    }
-
-}
-
-function removeFromCart(produkt){
-    let produkt = cart.find(hvert => hvert.type === produkt);
-    if(produkt && produkt.quantity > 0){
-        produkt.quantity--;
-        updateTotalPrice(produkt);
+    if (spladd) {
+        spladd.quantity++; // Rettelse: Brug objektet, ikke strengen
+        updateTotalPrice(spladd);
         saveCartToLocalStorage();
     }
 }
 
-function resetCart(product){
-    let produkt = cart.find(hvert => hvert.type === produkt);
-
-   
-    if(produkt) {
-        produkt.quantity =0;
-        updateTotalPrice(produkt);
+// Fjerner et produkt fra kurven
+function removeFromCart(produkt) {
+    let spledact = cart.find(hvert => hvert.type === produkt);
+    
+    if (spledact && spledact.quantity > 0) {
+        spledact.quantity--; // Rettelse: Brug objektet
+        updateTotalPrice(spledact);
         saveCartToLocalStorage();
     }
 }
 
-function updateTotalPrice(produkt){
-    let produkt = cart.find(hvert => hvert.type === produkt);
+// Nulstiller et enkelt produkt i kurven
+function resetCart(produkt) {
+    let splreset = cart.find(hvert => hvert.type === produkt);
 
-    if(produkt) {
-        produkt.total =produkt.quantity*produkt.price;
-        document.getElementById(produkt).value = produkt.quantity;
-        document.getElementById(produkt + "-total").value = produkt.total;
-
-        totalPrice();
+    if (splreset) {
+        splreset.quantity = 0;
+        splreset.total = 0;
+        updateTotalPrice(splreset);
+        saveCartToLocalStorage();
     }
 }
 
-function totalPrice(){
+// Opdaterer totalprisen for et produkt
+function updateTotalPrice(produkt) {
+    produkt.total = produkt.quantity * produkt.price;
+
+    document.getElementById(produkt.type).value = produkt.quantity;
+    document.getElementById(produkt.type + "-total").value = produkt.total;
+
+    totalPrice();
+}
+
+// Beregner den samlede pris for alle produkter i kurven
+function totalPrice() {
     const totalSum = cart.reduce((sum, ele) => sum + ele.total, 0);
     document.getElementById("totalSum").value = totalSum;
 }
 
-function restEntireCart(){
-    cart.forEach (maybe => {
-        maybe.quantity=0;
-        maybe.total=0;
+// Nulstiller hele kurven
+function resetEntireCart() {
+    cart.forEach(maybe => {
+        maybe.quantity = 0;
+        maybe.total = 0;
     });
 
     updateUIFromCart();
     saveCartToLocalStorage();
 }
 
-window.onload = function(){
+// Loader data fra localStorage ved opstart
+window.onload = function () {
     loadCartFromLocalStorage();
-}
+};
