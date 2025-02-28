@@ -187,16 +187,36 @@ h3{
     top: 3%;
 }
 
-.container-special-beer{
+.special-beer-container {
+    display: flex; /* Lægger boksene ved siden af hinanden */
+    justify-content: space-between; /* Giver dem afstand */
+    align-items: center; /* Centrerer dem vertikalt */
+    gap: 2rem; /* Alternativ måde at styre afstanden */
     position: absolute;
     top: 158%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 83rem;
+    width: 90rem; /* Juster efter behov */
+}
+
+.special-beer {
     background-color: #73885A;
     width: 25rem;
     height: 45rem;
     z-index: -1;
     border-radius: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    display: flex; /* Gør containeren til en flexbox */
+.can-names{
+    font-size: 3rem;
+    font-family: sansita;
+    top: 5%;
+}
+
+.can-img {
+    width: 18rem;  
 }
