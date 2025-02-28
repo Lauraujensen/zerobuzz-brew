@@ -215,8 +215,48 @@ h3{
     font-size: 3rem;
     font-family: sansita;
     top: 5%;
+    transition: 0.3s ease-in-out;
+}
+
+.can-names:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    color: var(--curry);
 }
 
 .can-img {
-    width: 18rem;  
+    width: 18rem;
+}
+
+.lakrids{
+    width: 16.2rem;
+    top: 16%;
+    position: absolute;
+}
+
+.citron{
+    width: 16.5rem;
+    top: 16%;
+    position: absolute;
+}
+
+.special-description{
+    text-decoration: none;
+    font-family: roboto;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--creme);
+    position: absolute;
+    top: 84%;
+}
+
+h4{
+    color: var(--creme);
+    font-family: roboto;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--creme);
+    position: absolute;
+    top: 89%;
+    text-decoration: underline;
 }
