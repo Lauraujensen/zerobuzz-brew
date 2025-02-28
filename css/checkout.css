@@ -96,3 +96,17 @@ body {
 .nav-links a:hover {
     color: var(--curry);
 }
+
+button{
+    border: none;
+    padding: none;
+    margin: none;
+}
+button:hover{
+    cursor: pointer;
+}
+.plusikon, .minusikon{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
