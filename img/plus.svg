@@ -14,8 +14,8 @@
   <g id="Lag_1-2" data-name="Lag 1">
     <g>
       <rect class="cls-2" width="88.37" height="88.37" rx="8.9" ry="8.9"/>
-      <rect class="cls-1" x="25.52" y="38.47" width="37.34" height="13"/>
-      <rect class="cls-1" x="25.52" y="38.47" width="37.34" height="13" transform="translate(89.16 .79) rotate(90)"/>
+      <rect class="cls-1" x="20.86" y="38.41" width="46.65" height="11.55"/>
+      <rect class="cls-1" x="20.86" y="38.41" width="46.65" height="11.55" transform="translate(0 88.37) rotate(-90)"/>
     </g>
   </g>
 </svg>

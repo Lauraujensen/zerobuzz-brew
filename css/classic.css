@@ -37,7 +37,7 @@
 }
 
 body {
-    background-image: url(../img/#);
+    background-image: url(../img/aboutpages/backgrounds/Classic.png);
     background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ body {
 }
 
 .nav-links a {
-    color: var(--creme);
+    color: #42592D;
     text-decoration: none;
     font-size: 1.4rem;
     transition: 0.3s ease-in-out;
@@ -90,4 +90,26 @@ body {
 
 .nav-links a:hover {
     color: var(--curry);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 80%;
+    margin: 10rem auto 0 auto;
+}
+.can {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+.can img {
+    width: 8rem;
+    height: auto;
+    border-radius: 1rem;
+}
+.description {
+    max-width: 40%;
 }
