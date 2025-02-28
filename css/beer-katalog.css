@@ -162,3 +162,41 @@ h3{
     top: 87%;
     text-decoration: underline;
 }
+
+.container-special-overskrift {
+    position: absolute;
+    top: 102%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #73885A;
+    width: 84rem;
+    height: 6rem;
+    z-index: -1;
+    border-radius: 4rem;
+
+    display: flex; /* Gør containeren til en flexbox */
+    justify-content: center; /* Centrerer vandret */
+    align-items: center; /* Centrerer lodret */
+}
+
+#special-h2{
+    font-family: sansita;
+    font-size: 4.2rem;
+    justify-content: center;
+    position: absolute;
+    top: 3%;
+}
+
+.container-special-beer{
+    position: absolute;
+    top: 158%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #73885A;
+    width: 25rem;
+    height: 45rem;
+    z-index: -1;
+    border-radius: 4rem;
+
+    display: flex; /* Gør containeren til en flexbox */
+}
