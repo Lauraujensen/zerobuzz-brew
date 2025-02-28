@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Lag_2" data-name="Lag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.37 88.37">
+<svg id="Lag_1" data-name="Lag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253.43 88.37">
   <defs>
     <style>
       .cls-1 {
@@ -11,11 +11,13 @@
       }
     </style>
   </defs>
-  <g id="Lag_1-2" data-name="Lag 1">
-    <g>
-      <rect class="cls-2" width="88.37" height="88.37" rx="8.9" ry="8.9"/>
-      <rect class="cls-1" x="25.52" y="38.47" width="37.34" height="13"/>
-      <rect class="cls-1" x="25.52" y="38.47" width="37.34" height="13" transform="translate(89.16 .79) rotate(90)"/>
-    </g>
+  <g>
+    <rect class="cls-2" width="88.37" height="88.37" rx="8.9" ry="8.9"/>
+    <rect class="cls-1" x="25.52" y="38.47" width="37.34" height="13"/>
+  </g>
+  <g>
+    <rect class="cls-2" x="165.05" width="88.37" height="88.37" rx="8.9" ry="8.9"/>
+    <rect class="cls-1" x="185.91" y="38.41" width="46.65" height="11.55"/>
+    <rect class="cls-1" x="185.91" y="38.41" width="46.65" height="11.55" transform="translate(165.05 253.43) rotate(-90)"/>
   </g>
 </svg>
