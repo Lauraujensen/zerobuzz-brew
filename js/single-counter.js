@@ -1,6 +1,6 @@
 "use strict";
 // Tilføjer et produkt til kurven
-function addToCart(produkt) {
+function addOneToCart(produkt) {
     let spladd = cart.find(bajer => bajer.type === produkt);
     
     if (spladd) {
@@ -8,17 +8,21 @@ function addToCart(produkt) {
         updateTotalPrice(spladd);
         saveCartToLocalStorage();
     }
+    console.log("tilføjet 1");
+    console.log(produkt);
+    console.log(spladd);
 }
 
 // Fjerner et produkt fra kurven
-function removeFromCart(produkt) {
+function removeOneFromCart(produkt) {
     let spledact = cart.find(bajer => bajer.type === produkt);
     
     if (spledact && spledact.quantity > 0) {
         spledact.quantity--; // Rettelse: Brug objektet
         updateTotalPrice(spledact);
-        saveCartToLocalStorage();
+        saveCartToLocalStorage();        
     }
+    console.log("fjernet 1");
 }
 
 // Nulstiller et enkelt produkt i kurven
