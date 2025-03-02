@@ -103,6 +103,7 @@ body {
     color: var(--curry);
 }
 
+/* Hovedindholdets layout */
 .page {
     font-family: roboto, sans-serif;
     display: flex;
@@ -111,6 +112,7 @@ body {
     height: 100vh;
 }
 
+/* Container til dåse og beskrivelse */
 .container {
     display: flex;
     align-items: center;
@@ -120,6 +122,7 @@ body {
     padding-top: 20rem;
 }
 
+/* Stil for øl-dåsen */
 .can {
     width: 25%;
     height: 55vh;
@@ -131,6 +134,7 @@ body {
     position: relative;
 }
 
+/* Sikrer, at dåse-billedet skaleres korrekt */
 .can-image {
     max-width: 170%;
     max-height: 170%;
@@ -139,6 +143,7 @@ body {
     padding-bottom: 1rem;
 }
 
+/* Styling af beskrivelsesboks */
 .label {
     background-color: var(--creme);
     width: 80%;
@@ -152,6 +157,7 @@ body {
     padding: 3rem;
 }
 
+/* Stil for overskriften i beskrivelsen */
 .label-title {
     font-size: 3rem;
     margin: 0;
@@ -159,6 +165,7 @@ body {
     font-family: sansita;
 }
 
+/* Stil for brødteksten i beskrivelsen */
 .label-text {
     font-size: 1rem;
     margin: 0.5rem 0;
@@ -166,6 +173,7 @@ body {
     font-family: roboto;
 }
 
+/* Stil for kassen, der indeholder alle valg */
 .description {
     background-color: var(--creme);
     padding: 2rem;
@@ -174,6 +182,7 @@ body {
     max-width: 60%;
 }
 
+/* Stil for hvert enkelt valg (enkelt dåse, 6-pack, 24-pack) */
 .description-title {
     font-size: 3rem;
     margin-bottom: 0.1rem;
@@ -203,7 +212,7 @@ body {
     margin-bottom: 15rem;
 }
 
-/* Individual Quantity Items */
+/* idividuelle Quantity Items */
 .quantity-item {
     display: flex;
     align-items: center;
@@ -213,18 +222,19 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/* Remove border on last item */
+/* Fjerner den nederste kant på det sidste element */
 .quantity-item:last-child {
     border-bottom: none;
 }
 
-/* Controls */
+/* Stil for knapperne og antal-displayet */
 .quantity-controls {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
+/* Styling for knapperne (+/-) */
 .quantity-controls button {
     background-color: var(--dark-green);
     color: white;
@@ -235,18 +245,19 @@ body {
     border-radius: 0.3rem;
 }
 
+/* Stil for tallet, der viser hvor mange enheder der er valgt */
 .quantity-controls span {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--dark-brown);
 }
 
-/* Image Styling - Custom Sizes */
+/* Sørger for, at billederne ikke forvrænges */
 .quantity-item img {
     height: auto;
 }
 
-/* Adjust individual icon sizes */
+/* Justerer størrelsen på de enkelte billeder individuelt */
 .quantity-item .can-icon {
     width: 1.5rem;
 }
