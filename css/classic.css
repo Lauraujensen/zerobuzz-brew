@@ -106,9 +106,8 @@ body {
     align-items: center;
     gap: 5%;
     max-width: 90%;
-    padding: 2rem;
     padding-left: 15rem;
-    padding-top: 5rem;
+    padding-top: 20rem;
 }
 
 .can {
@@ -166,7 +165,7 @@ body {
 
 .description-title {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.1rem;
     color: var(--dark-brown);
     font-family: decorya;
 }
@@ -178,21 +177,44 @@ body {
     font-family: roboto;
 }
 
-/* Quantity Selector */
+/* Quantity Box */
 .quantity-box {
     background-color: var(--creme);
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     gap: 1rem;
-    width: 20%;
-    margin: 2rem auto;
+    width: 28%;
+    margin-left: 34.7rem;
+    margin-bottom: 15rem;
 }
 
-.quantity-box button {
+/* Individual Quantity Items */
+.quantity-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Remove border on last item */
+.quantity-item:last-child {
+    border-bottom: none;
+}
+
+/* Controls */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quantity-controls button {
     background-color: var(--dark-green);
     color: white;
     border: none;
@@ -202,8 +224,26 @@ body {
     border-radius: 0.3rem;
 }
 
-.quantity-box span {
+.quantity-controls span {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--dark-brown);
+}
+
+/* Image Styling - Custom Sizes */
+.quantity-item img {
+    height: auto;
+}
+
+/* Adjust individual icon sizes */
+.quantity-item .can-icon {
+    width: 1.5rem;
+}
+
+.quantity-item .pack6-icon {
+    width: 60px;
+}
+
+.quantity-item .pack24-icon {
+    width: 80px;
 }

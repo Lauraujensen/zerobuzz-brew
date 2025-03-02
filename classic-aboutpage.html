@@ -42,16 +42,38 @@
                 </section>
             </section>
 
-            <!-- Quantity Selector - Now Properly Centered Below -->
-            <section class="quantity-container">
-                <div class="quantity-box">
-                    <button onclick="adjustQuantity(this, -1)">-</button>
-                    <span class="quantity">1</span>
-                    <button onclick="adjustQuantity(this, 1)">+</button>
+            <section class="quantity-box">
+                <div class="quantity-item">
+                    <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
+                    <p>1 stk.</p>
+                    <div class="quantity-controls">
+                        <button onclick="adjustQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="adjustQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+            
+                <div class="quantity-item">
+                    <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
+                    <p>6 stk.</p>
+                    <div class="quantity-controls">
+                        <button onclick="adjustQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="adjustQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+            
+                <div class="quantity-item">
+                    <img src="./img/24pack.png" alt="24-pack" class="pack24-icon">
+                    <p>24 stk.</p>
+                    <div class="quantity-controls">
+                        <button onclick="adjustQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="adjustQuantity(this, 1)">+</button>
+                    </div>
                 </div>
             </section>
-        </section>
-    </main>
+</main>            
 
 
 
