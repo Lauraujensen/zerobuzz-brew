@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -106,11 +107,13 @@ body {
     gap: 5%;
     max-width: 90%;
     padding: 2rem;
+    padding-left: 15rem;
+    padding-top: 5rem;
 }
 
 .can {
-    width: 20%;
-    height: 50vh;
+    width: 25%;
+    height: 55vh;
     background-color: var(--dark-green);
     border-radius: 1rem;
     display: flex;
@@ -120,8 +123,8 @@ body {
 }
 
 .can-image {
-    max-width: 150%;
-    max-height: 150%;
+    max-width: 170%;
+    max-height: 170%;
     object-fit: contain;
     border-radius: 0.5rem;
 }
@@ -136,11 +139,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 1rem;
+    padding: 3rem;
 }
 
 .label-title {
-    font-size: 1.5rem;
+    font-size: 3rem;
     margin: 0;
     color: var(--darker-green);
     font-family: sansita;
@@ -158,11 +161,11 @@ body {
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .description-title {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     color: var(--dark-brown);
     font-family: decorya;
@@ -173,4 +176,34 @@ body {
     line-height: 1.5;
     color: var(--dark-brown);
     font-family: roboto;
+}
+
+/* Quantity Selector */
+.quantity-box {
+    background-color: var(--creme);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 20%;
+    margin: 2rem auto;
+}
+
+.quantity-box button {
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.quantity-box span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-brown);
 }

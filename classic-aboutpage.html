@@ -30,18 +30,32 @@
     </nav>
 
     <main class="page">
-        <section class="container">
-            <section class="can">
-                <img src="../img/daaser/classic.png" alt="ZeroBuzz Brew dåse" class="can-image">
+        <!-- Wrapped in a flex column container to align properly -->
+        <section class="content-wrapper">
+            <section class="container">
+                <section class="can">
+                    <img src="../img/daaser/classic.png" alt="ZeroBuzz Brew dåse" class="can-image">
+                </section>
+                <section class="description">
+                    <h1 class="description-title">CLASSIC</h1>
+                    <p class="description-text">Oplev en smagsoplevelse ud over det sædvanlige med vores alkoholfri øl, brygget med nøje udvalgte humlesorter. Denne forfriskende og velafbalancerede øl byder på en fyldig smag med frugtige og blomstrede noter samt en behagelig bitterhed, der giver en autentisk øloplevelse – uden alkoholen. Perfekt til enhver lejlighed, hvor du ønsker en velsmagende og sprød tørstslukker. Nyd den rene smag af humle – uden kompromis!</p>
+                </section>
             </section>
-            <section class="description">
-                <h1 class="description-title">CLASSIC</h1>
-                <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <!-- Quantity Selector - Now Properly Centered Below -->
+            <section class="quantity-container">
+                <div class="quantity-box">
+                    <button onclick="adjustQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button onclick="adjustQuantity(this, 1)">+</button>
+                </div>
             </section>
         </section>
     </main>
 
+
+
                          
-    <script src="js/script.js"></script>
+    <script src="js/classic.js"></script>
 </body>
 </html>
