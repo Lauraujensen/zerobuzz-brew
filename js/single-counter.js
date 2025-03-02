@@ -1,71 +1,61 @@
-"use strict"; // Aktivere JS-strikt mode, hvilket hjælper med at finde fejl
-
-function addToCart(product){
-    // hent nuværende værdi fra inputfeltet med specifikt id og omdan til et tal
-    const quantity = parseInt(document.getElementById(product).value);
-
-    // øg quantity med 1 - læg en til den eksisterende quantity værdi
-    document.getElementById(product).value = quantity + 1;
-
-    // Opdater totalprisen 
-    // Fejl - Her skal man kalde på funktionen updateTotalPrice(product) og ikke totalPrice()
-    updateTotalPrice(product);
-
-}
-
-function removeFromCart(product){
-    // hent nuværende værdi fra inputfeltet med specifikt id og omdan til et tal
-    const quantity = parseInt(document.getElementById(product).value);
-
-    if(quantity > 0){
-    // formindsk quantity med 1 - træk en fra den eksisterende quantity værdi
-    document.getElementById(product).value = quantity -1;
-
-    //Opdater totalsummen for den enkelte varer (vare = kaffe-produkt)
-    updateTotalPrice(product);
+"use strict";
+// Tilføjer et produkt til kurven
+function addToCart(produkt) {
+    let spladd = cart.find(bajer => bajer.type === produkt);
+    
+    if (spladd) {
+        spladd.quantity++; // Rettelse: Brug objektet, ikke strengen
+        updateTotalPrice(spladd);
+        saveCartToLocalStorage();
     }
 }
 
-function resetCart(product){
-    // sæt quantity til 0
-    document.getElementById(product).value = 0;
-
-    //Opdater totalsummen for den enkelte varer (vare = kaffe-produkt)
-    updateTotalPrice(product);
-
-}
-
-// funktion som opdatere prisen for den enkelte vare (vare = kaffe-produkt)
-function updateTotalPrice(product){
-    // hent mængden (quantity) og pris-inputfeltet for den specifikke vare (vare = kaffe-produkt)
-    const quantity = parseInt(document.getElementById(product).value);
-
-    const price = parseInt(document.getElementById(product +"-price").value);
-
-    // Beregner totalprisen for denne specifikke vare 
-    const total = quantity * price;
-
-    document.getElementById(product +"-total").value = total;
-
-    // Opdater totalPrisen for alle vare
-    totalPrice();
-
-}
-
-// funktion til at beregne og opdatere den samlede totalpris for alle varer i kurven
-function totalPrice(){
-    // variable til at holde styr på den samlede totalpris
-    let totalSum = 0;
-
-    //finder alle inputfelter der indeholde et id hvor "-total" indgår i slutningen af id tekst-strengen
-    // Fejl her manglede jeg at indsætte enkelt anførelses-tegn rundt om '-total' inde i querySelectorAll
+// Fjerner et produkt fra kurven
+function removeFromCart(produkt) {
+    let spledact = cart.find(bajer => bajer.type === produkt);
     
-    const productElements = document.querySelectorAll("[id$='-total']");
+    if (spledact && spledact.quantity > 0) {
+        spledact.quantity--; // Rettelse: Brug objektet
+        updateTotalPrice(spledact);
+        saveCartToLocalStorage();
+    }
+}
 
-    // looper gennem hvert produkt-element (coffee, espresso, americano) og lægger værdierne sammen
-    productElements.forEach(productElem => {
-        totalSum += parseInt(productElem.value);
+// Nulstiller et enkelt produkt i kurven
+function resetCart(produkt) {
+    let splreset = cart.find(bajer => bajer.type === produkt);
+
+    if (splreset) {
+        splreset.quantity = 0;
+        splreset.total = 0;
+        updateTotalPrice(splreset);
+        saveCartToLocalStorage();
+    }
+}
+
+// Opdaterer totalprisen for et produkt
+function updateTotalPrice(produkt) {
+    produkt.total = produkt.quantity * produkt.price;
+
+    document.getElementById(produkt.type).value = produkt.quantity;
+    document.getElementById(produkt.type + "-total").value = produkt.total;
+
+    totalPrice();
+}
+
+// Beregner den samlede pris for alle produkter i kurven
+function totalPrice() {
+    const totalSum = cart.reduce((sum, ele) => sum + ele.total, 0);
+    document.getElementById("totalSum").value = totalSum;
+}
+
+// Nulstiller hele kurven
+function resetEntireCart() {
+    cart.forEach(maybe => {
+        maybe.quantity = 0;
+        maybe.total = 0;
     });
 
-    document.getElementById('totalSum').value = totalSum;
+    updateUIFromCart();
+    saveCartToLocalStorage();
 }
