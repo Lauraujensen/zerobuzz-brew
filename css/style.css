@@ -203,10 +203,12 @@ h2{
 
 /* Brødtekst */
 .flavor-text p {
-    font-size: 16px;
+    font-family: roberto;
+    font-size: 1.2rem;
     color: #333;
     margin-bottom: 3rem;
     margin-top: 3rem;
+
 }
 
 /* Knap-styling */
@@ -231,5 +233,107 @@ h2{
     position: relative;
     z-index: 1;
     margin-top: -10rem;
+}
+
+/* Sikrer at baggrundsbilledet ikke skubbes ned */
+.nextsections {
+    position: relative;
+    z-index: 2;
+    margin-top: -20rem;
+    margin-top: -50rem;
+    width: 100%; /* Adjust as needed */
+    display: block;
+
+    /* Apply a mask gradient to fade the top and bottom */
+    -webkit-mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 20%, white 80%, transparent);
+}
+
+.flavor-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.quality-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    background: url('../img/forside-02.png') center/cover no-repeat;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 20%, white 80%, transparent);
+    position: relative;
+}
+
+.quality-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--creme);
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.quality-text {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.quality-text h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: sansita;
+}
+
+.quality-text hr {
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin: 0.5rem auto;
+}
+
+.quality-text p {
+    font-size: 1rem;
+    color: #333;
+    margin: 1rem 0;
+    font-family: roboto;
+}
+
+.quality-button {
+    background-color: var(--curry);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: roboto;
+    display: inline-block;
+    margin-top: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quality-button:hover {
+    background-color: #b67c1e;
+}
+
+.quality-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
