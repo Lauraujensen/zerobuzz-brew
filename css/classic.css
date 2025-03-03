@@ -45,6 +45,23 @@ body {
     min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
   }
 
+h2{
+    font-family: roboto;
+    color: var(--dark-green);
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+h2:hover{
+    color: var(--darker-green);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
   #kurv{
     display: flex;
     align-items: center;

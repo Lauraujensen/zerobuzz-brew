@@ -82,8 +82,8 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 background-color: #C9D9B9;
-margin: 16rem 12rem 0rem 12rem;
-padding: 2rem 4rem 2rem 4rem;
+margin: 16rem 16rem 0rem 16rem;
+padding: 2rem 3rem 2rem 3rem;
 border-radius: 1.5rem;
 box-shadow: 1rem 1rem 0.3rem hsl(0deg 0% 0% / 27%);
 }
@@ -96,7 +96,7 @@ article.tekstbox-404 {
 }
 
 img.billede-404 {
-    width: 11rem;
+    width: 12rem;
 }
 
 p.tekst-404 {
@@ -106,13 +106,20 @@ p.tekst-404 {
 }
 
 p.knap-404 {
-    font-size: 2rem;
+    font-size: 1rem;
     background-color: #DC9924;
     color: #F1EAD5;
-    border-radius: 1rem;
-    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 0.5rem;
+    padding: 0.8rem 3rem 0.8rem 3rem;
     font-family: roboto;
     margin: 0rem 0rem 1rem 0rem;
+}
+
+p.knap-404:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    color: #000000;
+    transition: 0.3s ease-in-out;
 }
 
 section article a {
