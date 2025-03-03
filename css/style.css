@@ -49,6 +49,10 @@
     transform: scale(1.1);
   }
 
+  body {
+    background-color: black;
+  }
+
 /* Navbar styling */
 .navbar {
     display: flex;
@@ -134,14 +138,19 @@ h2{
 }
 
 .startimg {
-    width: 120%;
+    width: 100%;
     margin-top: -20rem;
 
 }
 
 .nextsection {
-    margin-top: -25rem;
-    width: 100%
+    margin-top: -42rem;
+    width: 100%; /* Adjust as needed */
+    display: block;
+
+    /* Apply a mask gradient to fade the top and bottom */
+    -webkit-mask-image: linear-gradient(to bottom, transparent, white 20%, white 80%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, white 20%, white 80%, transparent);
 }
 
 /* Sektionens styling */
@@ -149,7 +158,7 @@ h2{
     background-color: #d9e0c7; /* Lys grøn baggrund */
     border-radius: 20px; /* Afrundede kanter */
     padding: 40px;
-    margin: -80px auto 40px auto; /* Trækker sektionen op over billedet */
+    margin: 80px auto 40px auto; /* Trækker sektionen op over billedet */
     max-width: 1100px;
     position: relative;
     z-index: 2; /* Sikrer at sektionen vises ovenpå */
