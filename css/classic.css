@@ -109,7 +109,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 /* Container til dåse og beskrivelse */
@@ -119,14 +118,14 @@ body {
     gap: 5%;
     max-width: 90%;
     padding-left: 15rem;
-    padding-top: 20rem;
+    padding-top: 5rem;
 }
 
 /* Stil for øl-dåsen */
 .can {
-    width: 25%;
-    height: 55vh;
-    background-color: var(--dark-green);
+    width: 30%;
+    height: 58vh;
+    background-color:#42592d00 ;
     border-radius: 2.5rem;
     display: flex;
     justify-content: center;
@@ -136,11 +135,12 @@ body {
 
 /* Sikrer, at dåse-billedet skaleres korrekt */
 .can-image {
-    max-width: 170%;
-    max-height: 170%;
+    max-width: 250%;
+    max-height: 250%;
     object-fit: contain;
     border-radius: 0.5rem;
     padding-bottom: 1rem;
+    padding-top: 10rem;
 }
 
 /* Styling af beskrivelsesboks */
@@ -208,8 +208,9 @@ body {
     align-items: center;
     gap: 1rem;
     width: 28%;
-    margin-left: 34.7rem;
-    margin-bottom: 15rem;
+    margin-left: 38.1rem;
+    margin-bottom: 5rem;
+    margin-top: -3rem;
 }
 
 /* idividuelle Quantity Items */
