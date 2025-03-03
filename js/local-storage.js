@@ -7,16 +7,16 @@ let cart = [
     { type: "ingefaer", quantity: 0, price: 16, total: 0 },
     { type: "citron", quantity: 0, price: 16, total: 0 },
     { type: "hyldeblomst", quantity: 0, price: 16, total: 0 },
-    { type: "classic-sixpack", quantity: 0, price: 16, total: 0 },
-    { type: "lakrids-sixpack", quantity: 0, price: 16, total: 0 },
-    { type: "ingefaer-sixpack", quantity: 0, price: 16, total: 0 },
-    { type: "citron-sixpack", quantity: 0, price: 16, total: 0 },
-    { type: "hyldeblomst-sixpack", quantity: 0, price: 16, total: 0 },
-    { type: "classic-ramme", quantity: 0, price: 16, total: 0 },
-    { type: "lakrids-ramme", quantity: 0, price: 12, total: 0 },
-    { type: "ingefaer-ramme", quantity: 0, price: 16, total: 0 },
-    { type: "citron-ramme", quantity: 0, price: 16, total: 0 },
-    { type: "hyldeblomst-ramme", quantity: 0, price: 16, total: 0 }
+    { type: "classic-sixpack", quantity: 0, price: 60, total: 0 },
+    { type: "lakrids-sixpack", quantity: 0, price: 49, total: 0 },
+    { type: "ingefaer-sixpack", quantity: 0, price: 60, total: 0 },
+    { type: "citron-sixpack", quantity: 0, price: 60, total: 0 },
+    { type: "hyldeblomst-sixpack", quantity: 0, price: 60, total: 0 },
+    { type: "classic-ramme", quantity: 0, price: 299, total: 0 },
+    { type: "lakrids-ramme", quantity: 0, price: 249, total: 0 },
+    { type: "ingefaer-ramme", quantity: 0, price: 299, total: 0 },
+    { type: "citron-ramme", quantity: 0, price: 299, total: 0 },
+    { type: "hyldeblomst-ramme", quantity: 0, price: 299, total: 0 }
 
 ];
 
@@ -46,8 +46,15 @@ function updateUIFromCart() {
             prisIndi.value = bajer.total; // Rettelse: Bruger bajer.total
         }
     });
-    samletProduktPrice();
+    //Disse er til for at at "samlet/total...Price()" er opdateret når man går væk fra checkout siden og siden hen kommer tilbage igen
+    samletHyldeblomstPrice();
+    samletCitronPrice();
+    samletIngefaerPrice();
+    samletClassicPrice();
+    samletLakridsPrice();
+    
     totalPrice();
+    console.log("updateUI");
 }
 
 

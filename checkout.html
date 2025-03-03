@@ -35,115 +35,154 @@
     <section class="alle-valgte">
         <article class="first">
             <h4 class="samlet-type-pris">???</h4>
-            <input type="number" name="produktSum" id="produktSum" value="0" class="form-control" disabled>
-            
+            <input type="number" name="produktSum" id="classicSum" value="0" class="form-control" disabled>
+            <button class="btn-slet-produkt" onclick="removeEntireClassic('classic');">Slet classic fra listen</button>
             <h5 class="type-navn">Classic ZeroBuzz Brew</h5>
 
             <section class="enkelt-kasse">
                 <!-- <input type="number" id="classic-price" value="10" class="form-control" disabled> -->
-                <input type="number" name="classic" id="classic" value="0"  class="form-control" disabled>
+                
                 <button class="btn-plus-enkelt" onclick="addOneToCart('classic');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
                 <button class="btn-minus-enkelt" onclick="removeOneFromCart('classic');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
-                <input type="number" id="classic-total" value="0" class="form-control" disabled>
+                <input type="number" name="classic" id="classic" value="0"  class="form-control" disabled>
+                <input type="number" id="classic-total" value="0" class="enkelt-produkt-pris" disabled>
                  <!-- <label id="classic-total" ></label> -->
             </section>
             
             <section class="seks-kasse">
-                <button class="btn-plus-seks" onclick="addSixToCart('seks-classic');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-seks" onclick="removeSixFromCart('seks-classic');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                
+                <button class="btn-plus-seks" onclick="addSixToCart('classic-sixpack');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-seks" onclick="removeSixFromCart('classic-sixpack');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="classic-sixpack" id="classic-sixpack" value="0"  class="form-control" disabled>
+                <input type="number" id="classic-sixpack-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>
 
             <section class="ft-kasse">
-                <button class="btn-plus-ft" onclick="addTFToCart('ft-classic');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-ft" onclick="removeTFFromCart('ft-classic');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-ft" onclick="addTFToCart('classic-ramme');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-ft" onclick="removeTFFromCart('classic-ramme');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="classic-ramme" id="classic-ramme" value="0"  class="form-control" disabled>
+                <input type="number" id="classic-ramme-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>             
         </article>
 
         <article class="second">
             <h4 class="samlet-type-pris">???</h4>
+            <input type="number" name="produktSum" id="lakridsSum" value="0" class="form-control" disabled>
+            <button class="btn-slet-produkt" onclick="removeEntireLakrids('lakrids');">Slet lakrids fra listen</button>
             <h5 class="type-navn">Lakrids ZeroBuzz Brew</h5>
             <section class="enkelt-kasse">
-                <button class="btn-plus-enkelt" onclick="addOneToCart('enkelt-lakrids');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-enkelt" onclick="removeOneFromCart('enkelt-lakrids');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-enkelt" onclick="addOneToCart('lakrids');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-enkelt" onclick="removeOneFromCart('lakrids');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="lakrids" id="lakrids" value="0"  class="form-control" disabled>
+                <input type="number" id="lakrids-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>
 
             <section class="seks-kasse">
-                <button class="btn-plus-seks" onclick="addSixToCart('seks-lakrids');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-seks" onclick="removeSixFromCart('seks-lakrids');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-seks" onclick="addSixToCart('lakrids-sixpack');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-seks" onclick="removeSixFromCart('lakrids-sixpack');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="lakrids-sixpack" id="lakrids-sixpack" value="0"  class="form-control" disabled>
+                <input type="number" id="lakrids-sixpack-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>
 
             <section class="ft-kasse">
-                <button class="btn-plus-ft" onclick="addTFToCart('ft-lakrids');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-ft" onclick="removeTFFromCart('ft-lakrids');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-ft" onclick="addTFToCart('lakrids-ramme');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-ft" onclick="removeTFFromCart('lakrids-ramme');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="lakrids-ramme" id="lakrids-ramme" value="0"  class="form-control" disabled>
+                <input type="number" id="lakrids-ramme-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>         
         </article>
 
         <article class="third">
             <h4 class="samlet-type-pris">???</h4>
+            <input type="number" name="produktSum" id="ingefaerSum" value="0" class="form-control" disabled>
+            <button class="btn-slet-produkt" onclick="removeEntireIngefaer('ingefaer');">Slet ingefær fra listen</button>
             <h5 class="type-navn">Ingefær ZeroBuzz Brew</h5>
 
             <section class="enkelt-kasse">
-                <button class="btn-plus-enkelt" onclick="addOneToCart('enkelt-ingefær');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-enkelt" onclick="removeOneFromCart('enkelt-ingefær');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-enkelt" onclick="addOneToCart('ingefaer');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-enkelt" onclick="removeOneFromCart('ingefaer');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="ingefaer" id="ingefaer" value="0"  class="form-control" disabled>
+                <input type="number" id="ingefaer-total" value="0" class="enkelt-produkt-pris" disabled>
                 
             </section>
 
             <section class="seks-kasse">
-                <button class="btn-plus-seks" onclick="addSixToCart('seks-ingefær');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-seks" onclick="removeSixFromCart('seks-ingefær');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-seks" onclick="addSixToCart('ingefaer-sixpack');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-seks" onclick="removeSixFromCart('ingefaer-sixpack');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="ingefaer-sixpack" id="ingefaer-sixpack" value="0"  class="form-control" disabled>
+                <input type="number" id="ingefaer-sixpack-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>
 
             <section class="ft-kasse">
-                <button class="btn-plus-ft" onclick="addTFToCart('ft-ingefær');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-            <button class="btn-minus-ft" onclick="removeTFFromCart('ft-ingefær');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-ft" onclick="addTFToCart('ingefaer-ramme');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+            <button class="btn-minus-ft" onclick="removeTFFromCart('ingefaer-ramme');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+            <input type="number" name="ingefaer-ramme" id="ingefaer-ramme" value="0"  class="form-control" disabled>
+                <input type="number" id="ingefaer-ramme-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>
         </article>
 
         <article class="fourth">
             <h4 class="samlet-type-pris">???</h4>
+            <input type="number" name="produktSum" id="citronSum" value="0" class="form-control" disabled>
+            <button class="btn-slet-produkt" onclick="removeEntireCitron('citron');">Slet citron fra listen</button>
             <h5 class="type-navn">Citron ZeroBuzz Brew</h5>
 
             <section class="enkelt-kasse">
-                <button class="btn-plus-enkelt" onclick="addOneToCart('enkelt-citron');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-enkelt" onclick="removeOneFromCart('enkelt-citron');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-enkelt" onclick="addOneToCart('citron');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-enkelt" onclick="removeOneFromCart('citron');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="citron" id="citron" value="0"  class="form-control" disabled>
+                <input type="number" id="citron-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>
             <section class="seks-kasse">
-                <button class="btn-plus-seks" onclick="addSixToCart('seks-citron');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-seks" onclick="removeSixFromCart('seks-citron');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-seks" onclick="addSixToCart('citron-sixpack');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-seks" onclick="removeSixFromCart('citron-sixpack');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="citron-sixpack" id="citron-sixpack" value="0"  class="form-control" disabled>
+                <input type="number" id="citron-sixpack-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>
             <section class="ft-kasse">
-                <button class="btn-plus-ft" onclick="addTFToCart('ft-citron');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-ft" onclick="removeTFFromCart('ft-citron');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-ft" onclick="addTFToCart('citron-ramme');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-ft" onclick="removeTFFromCart('citron-ramme');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="citron-ramme" id="citron-ramme" value="0"  class="form-control" disabled>
+                <input type="number" id="citron-ramme-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>          
         </article>
 
         <article class="fith">
             <h4 class="samlet-type-pris">???</h4>
+            <input type="number" name="produktSum" id="hyldeblomstSum" value="0" class="form-control" disabled>
+            <button class="btn-slet-produkt" onclick="removeEntireHyldeblomst('hyldeblomst');">Slet hyldeblomst fra listen</button>
             <h5 class="type-navn">Hyldeblomst ZeroBuzz Brew</h5>
 
             <section class="enkelt-kasse">
-                <button class="btn-plus-enkelt" onclick="addOneToCart('enkelt-hyld');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-enkelt" onclick="removeOneFromCart('enkelt-hyld');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-enkelt" onclick="addOneToCart('hyldeblomst');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-enkelt" onclick="removeOneFromCart('hyldeblomst');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="hyldeblomst" id="hyldeblomst" value="0"  class="form-control" disabled>
+                <input type="number" id="hyldeblomst-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>
 
             <section class="seks-kasse">
-                <button class="btn-plus-seks" onclick="addSixToCart('seks-hyld');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-seks" onclick="removeSixFromCart('seks-hyld');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-seks" onclick="addSixToCart('hyldeblomst-sixpack');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-seks" onclick="removeSixFromCart('hyldeblomst-sixpack');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="hyldeblomst-sixpack" id="hyldeblomst-sixpack" value="0"  class="form-control" disabled>
+                <input type="number" id="hyldeblomst-sixpack-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>
 
             <section class="ft-kasse">
-                <button class="btn-plus-ft" onclick="addTFToCart('ft-hyld');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-ft" onclick="removeTFFromCart('ft-hyld');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-plus-ft" onclick="addTFToCart('hyldeblomst-ramme');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
+                <button class="btn-minus-ft" onclick="removeTFFromCart('hyldeblomst-ramme');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <input type="number" name="hyldeblomst-ramme" id="hyldeblomst-ramme" value="0"  class="form-control" disabled>
+                <input type="number" id="hyldeblomst-ramme-total" value="0" class="enkelt-produkt-pris" disabled>
             </section>
         </article>
         
     </section>
     <section class="totalpris">
         <input type="number" name="totalSum" id="totalSum" value="0" class="form-control" disabled>
+        <button class="btn-slet-alt" onclick="resetEntireCart();">Slet alt</button>
     </section>
 
     <script src="js/script.js"></script>
     <script src="js/local-storage.js"></script>
-    <script src="js/single-counter.js"></script>
+    <script src="js/cl-counter.js"></script>
 </body>
 </html>
