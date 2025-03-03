@@ -230,6 +230,18 @@ h3{
     color: var(--curry);
 }
 
+#ginger-h2{
+    margin-left: 4rem;
+}
+
+#lakrids-h2{
+    left: 9.2%;
+}
+
+#citron-h2{
+    right: 10.5%;
+}
+
 .can-img {
     width: 18rem;
 }
