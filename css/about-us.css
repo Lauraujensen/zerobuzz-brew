@@ -41,7 +41,7 @@ body {
     background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat;
-    min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
+    min-height: 80vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
   }
 
   #kurv{
@@ -80,11 +80,44 @@ body {
 section.side-404 {
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: space-around;
+background-color: #C9D9B9;
+margin: 16rem 12rem 0rem 12rem;
+padding: 2rem 4rem 2rem 4rem;
+border-radius: 1.5rem;
+box-shadow: 1rem 1rem 0.3rem hsl(0deg 0% 0% / 27%);
+}
+
+article.tekstbox-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
 }
 
 img.billede-404 {
-    width: 15rem;
+    width: 11rem;
+}
+
+p.tekst-404 {
+    margin: 0rem 0rem 2rem 0rem;
+    font-size: 3.5rem;
+    font-family: sansita;
+}
+
+p.knap-404 {
+    font-size: 2rem;
+    background-color: #DC9924;
+    color: #F1EAD5;
+    border-radius: 1rem;
+    padding: 1rem 4rem 1rem 4rem;
+    font-family: roboto;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+section article a {
+    text-decoration: none;
+    color: #000000;
 }
 
 
