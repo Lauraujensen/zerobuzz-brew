@@ -41,7 +41,6 @@
         background-image: url(../img/beer-katalog-background.png);
         background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
         background-position: center; /* Centrerer billedet */
-        background-repeat: no-repeat;
         min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
       }
   
@@ -194,16 +193,16 @@ h3{
 }
 
 .special-beer-container {
-    display: flex; /* Lægger boksene ved siden af hinanden */
-    justify-content: space-between; /* Giver dem afstand */
-    align-items: center; /* Centrerer dem vertikalt */
-    gap: 2rem; /* Alternativ måde at styre afstanden */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    gap: 2rem; /* Afstand mellem bokse */
+    justify-content: center;
     position: absolute;
     top: 158%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 83rem;
-    width: 90rem; /* Juster efter behov */
+    width: 90rem;
 }
 
 .special-beer {
@@ -277,4 +276,45 @@ h4{
     position: absolute;
     top: 89%;
     text-decoration: underline;
+}
+
+.special-beer-container-02 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    gap: 2rem; /* Afstand mellem bokse */
+    justify-content: center;
+    position: absolute;
+    top: 260%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 83rem;
+    width: 90rem;
+}
+
+.can-names{
+    font-size: 3rem;
+    font-family: sansita;
+    top: 5%;
+    transition: 0.3s ease-in-out;
+}
+
+.can-names:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+    color: var(--curry);
+}
+
+#hyldeblomst-h2{
+    left: 6%;
+}
+
+.hyldeblomst{
+    width: 17rem;
+}
+
+.mystery-h2{
+    font-size: 2.8rem;
+    font-family: sansita;
+    text-transform: uppercase;
+    top: 50%;
 }
