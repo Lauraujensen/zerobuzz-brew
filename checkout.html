@@ -35,11 +35,15 @@
     <section class="alle-valgte">
         <article class="first">
             <h4 class="samlet-type-pris">???</h4>
+            <input type="number" name="produktSum" id="produktSum" value="0" class="form-control" disabled>
+            
             <h5 class="type-navn">Classic ZeroBuzz Brew</h5>
 
             <section class="enkelt-kasse">
+                <!-- <input type="number" id="classic-price" value="10" class="form-control" disabled> -->
+                <input type="number" name="classic" id="classic" value="0"  class="form-control" disabled>
                 <button class="btn-plus-enkelt" onclick="addOneToCart('classic');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-enkelt" onclick="removeOneFromCart('enkelt-classic');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
+                <button class="btn-minus-enkelt" onclick="removeOneFromCart('classic');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
                 <input type="number" id="classic-total" value="0" class="form-control" disabled>
                  <!-- <label id="classic-total" ></label> -->
             </section>
@@ -133,6 +137,9 @@
             </section>
         </article>
         
+    </section>
+    <section class="totalpris">
+        <input type="number" name="totalSum" id="totalSum" value="0" class="form-control" disabled>
     </section>
 
     <script src="js/script.js"></script>

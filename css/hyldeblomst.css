@@ -38,7 +38,7 @@
 }
 
 body {
-    background-image: url(../img/aboutpages/backgrounds/Classic.png);
+    background-image: url(../img/aboutpages/backgrounds/hyldeblomst.png);
     background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat;
@@ -163,6 +163,7 @@ body {
     margin: 0;
     color: var(--darker-green);
     font-family: sansita;
+    letter-spacing: 0,1rem;
 }
 
 /* Stil for brødteksten i beskrivelsen */
@@ -188,6 +189,7 @@ body {
     margin-bottom: 0.1rem;
     color: var(--dark-brown);
     font-family: decorya;
+    letter-spacing: 0.1rem;
 }
 
 .description-text {

@@ -39,12 +39,24 @@ function resetCart(produkt) {
 
 // Opdaterer totalprisen for et produkt
 function updateTotalPrice(produkt) {
-    produkt.total = produkt.quantity * produkt.price;
+    let splreset = cart.find(bajer => bajer.type === produkt);
 
-    document.getElementById(produkt.type).value = produkt.quantity;
-    document.getElementById(produkt.type + "-total").value = produkt.total;
+    if(produkt){
+        produkt.total = produkt.quantity * produkt.price;
+        
+        document.getElementById(produkt.type).value = produkt.quantity;
+        document.getElementById(produkt.type + "-total").value = produkt.total;
 
     totalPrice();
+    samletProduktPrice();
+}
+    
+}
+
+// Beregner den samlede pris for alle produkter i kurven
+function samletProduktPrice() {
+    const produktSum = cart.reduce((sum, ele) => sum + ele.total, 0);
+    document.getElementById("produktSum").value = produktSum;
 }
 
 // Beregner den samlede pris for alle produkter i kurven

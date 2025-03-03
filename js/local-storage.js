@@ -6,7 +6,18 @@ let cart = [
     { type: "lakrids", quantity: 0, price: 12, total: 0 },
     { type: "ingefaer", quantity: 0, price: 16, total: 0 },
     { type: "citron", quantity: 0, price: 16, total: 0 },
-    { type: "hyldeblomst", quantity: 0, price: 16, total: 0 }
+    { type: "hyldeblomst", quantity: 0, price: 16, total: 0 },
+    { type: "classic-sixpack", quantity: 0, price: 16, total: 0 },
+    { type: "lakrids-sixpack", quantity: 0, price: 16, total: 0 },
+    { type: "ingefaer-sixpack", quantity: 0, price: 16, total: 0 },
+    { type: "citron-sixpack", quantity: 0, price: 16, total: 0 },
+    { type: "hyldeblomst-sixpack", quantity: 0, price: 16, total: 0 },
+    { type: "classic-ramme", quantity: 0, price: 16, total: 0 },
+    { type: "lakrids-ramme", quantity: 0, price: 12, total: 0 },
+    { type: "ingefaer-ramme", quantity: 0, price: 16, total: 0 },
+    { type: "citron-ramme", quantity: 0, price: 16, total: 0 },
+    { type: "hyldeblomst-ramme", quantity: 0, price: 16, total: 0 }
+
 ];
 
 // Gemmer kurvens indhold i localStorage
@@ -35,6 +46,7 @@ function updateUIFromCart() {
             prisIndi.value = bajer.total; // Rettelse: Bruger bajer.total
         }
     });
+    samletProduktPrice();
     totalPrice();
 }
 
