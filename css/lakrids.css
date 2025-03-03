@@ -273,3 +273,19 @@ body {
 .quantity-item .pack24-icon {
     width: 80px;
 }
+
+h2{
+    font-family: roboto;
+    color: var(--dark-green);
+    position: absolute;
+    top: 18%;
+    left: 5%;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+h2:hover{
+    color: var(--darker-green);
+    font-weight: bold;
+    cursor: pointer;
+}
