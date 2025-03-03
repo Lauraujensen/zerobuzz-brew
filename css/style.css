@@ -36,14 +36,6 @@
     src: url(fonts/roboto.ttf);
 }
 
-body {
-    background-image: url(../img/forside-01.png);
-    background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
-    background-position: center; /* Centrerer billedet */
-    background-repeat: no-repeat;
-    min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
-  }
-
   #kurv{
     display: flex;
     align-items: center;
@@ -139,4 +131,15 @@ h2{
 #logo{
     width: 12rem;
     margin-left: 2.5rem;
+}
+
+.startimg {
+    width: 120%;
+    margin-top: -2rem;
+
+}
+
+.nextsection {
+    margin-top: -20rem;
+    width: 100%
 }
