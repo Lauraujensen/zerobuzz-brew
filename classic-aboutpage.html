@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="ZeroBuzz Brew sælger spændende, alkoholfrie øl, der passer til enhver lejlighed! 
+    Få kvalitets-øl med 0,0% hos ZeroBuzz Brew!">
+   
+    <meta name="keywords" content="øl, alkoholfri øl, specialøl, alkoholfrie øl, bryggeri, humle, classic, drikkevare, 
+    drikkevarer, ædru, sober curious, 0,0%, alkoholfrie drikkevarer">
+    
+    <meta name="author" content="ZeroBuzz Brew">
+
+    <title>ZeroBuzz Brew</title>
+    <link rel="stylesheet" href="../css/classic.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a class="logo" href="index.html"><img src="img/creme-bee.svg" alt="Logo"></a>
+        <ul class="nav-links">
+            <li><a id="forside" href="index.html">Forside</a></li>
+            <li><a id="shop" href="beer-katalog.html">Shop</a></li>
+            <li><a id="om-os" href="about-us.html">Om os</a></li>
+            <li><a id="anmeldelser" href="reviews.html">Anmeldelser</a></li>
+        </ul>
+        <a href="checkout.html"><img id="kurv" src="img/kurv.png" alt="Indkøbskurv"></a>
+    </nav>
+
+    <main class="page">
+       <!-- Indpakning af hovedindholdet for bedre struktur -->
+        <section class="content-wrapper">
+                <!-- Sektion der indeholder produktbillede og beskrivelse -->
+            <section class="container">
+                <!-- Billede af øl-dåsen -->
+                <section class="can">
+                    <img src="../img/daaser/classic.png" alt="ZeroBuzz Brew dåse" class="can-image">
+                </section>
+
+                <!-- Beskrivelsen af øllen -->
+                <section class="description">
+                    <h1 class="description-title">CLASSIC</h1>
+                    <p class="description-text">Oplev en smagsoplevelse ud over det sædvanlige med vores alkoholfri øl, brygget med nøje udvalgte humlesorter. Denne forfriskende og velafbalancerede øl byder på en fyldig smag med frugtige og blomstrede noter samt en behagelig bitterhed, der giver en autentisk øloplevelse – uden alkoholen. Perfekt til enhver lejlighed, hvor du ønsker en velsmagende og sprød tørstslukker. Nyd den rene smag af humle – uden kompromis!</p>
+                </section>
+            </section>
+
+                <!-- Sektion til valg af antal -->
+            <section class="quantity-box">
+                <div class="quantity-item">
+                <!-- Enkelt dåse -->
+                    <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
+                    <p>1 stk.</p>
+                    <div class="quantity-controls">
+                        <button onclick="adjustQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="adjustQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+                <!-- 6-pack -->
+                <div class="quantity-item">
+                    <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
+                    <p>6 stk.</p>
+                    <div class="quantity-controls">
+                        <button onclick="adjustQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="adjustQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+                <!-- 24-pack -->
+                <div class="quantity-item">
+                    <img src="./img/24pack.png" alt="24-pack" class="pack24-icon">
+                    <p>24 stk.</p>
+                    <div class="quantity-controls">
+                        <button onclick="adjustQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="adjustQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+            </section>
+</main>            
+
+
+
+                         
+    <script src="js/classic.js"></script>
+</body>
+</html>

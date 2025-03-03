@@ -1,71 +1,65 @@
-"use strict"; // Aktivere JS-strikt mode, hvilket hjælper med at finde fejl
-
-function addToCart(product){
-    // hent nuværende værdi fra inputfeltet med specifikt id og omdan til et tal
-    const quantity = parseInt(document.getElementById(product).value);
-
-    // øg quantity med 1 - læg en til den eksisterende quantity værdi
-    document.getElementById(product).value = quantity + 1;
-
-    // Opdater totalprisen 
-    // Fejl - Her skal man kalde på funktionen updateTotalPrice(product) og ikke totalPrice()
-    updateTotalPrice(product);
-
+"use strict";
+// Tilføjer et produkt til kurven
+function addOneToCart(produkt) {
+    let spladd = cart.find(bajer => bajer.type === produkt);
+    
+    if (spladd) {
+        spladd.quantity++; // Rettelse: Brug objektet, ikke strengen
+        updateTotalPrice(spladd);
+        saveCartToLocalStorage();
+    }
+    console.log("tilføjet 1");
+    console.log(produkt);
+    console.log(spladd);
 }
 
-function removeFromCart(product){
-    // hent nuværende værdi fra inputfeltet med specifikt id og omdan til et tal
-    const quantity = parseInt(document.getElementById(product).value);
+// Fjerner et produkt fra kurven
+function removeOneFromCart(produkt) {
+    let spledact = cart.find(bajer => bajer.type === produkt);
+    
+    if (spledact && spledact.quantity > 0) {
+        spledact.quantity--; // Rettelse: Brug objektet
+        updateTotalPrice(spledact);
+        saveCartToLocalStorage();        
+    }
+    console.log("fjernet 1");
+}
 
-    if(quantity > 0){
-    // formindsk quantity med 1 - træk en fra den eksisterende quantity værdi
-    document.getElementById(product).value = quantity -1;
+// Nulstiller et enkelt produkt i kurven
+function resetCart(produkt) {
+    let splreset = cart.find(bajer => bajer.type === produkt);
 
-    //Opdater totalsummen for den enkelte varer (vare = kaffe-produkt)
-    updateTotalPrice(product);
+    if (splreset) {
+        splreset.quantity = 0;
+        splreset.total = 0;
+        updateTotalPrice(splreset);
+        saveCartToLocalStorage();
     }
 }
 
-function resetCart(product){
-    // sæt quantity til 0
-    document.getElementById(product).value = 0;
+// Opdaterer totalprisen for et produkt
+function updateTotalPrice(produkt) {
+    produkt.total = produkt.quantity * produkt.price;
 
-    //Opdater totalsummen for den enkelte varer (vare = kaffe-produkt)
-    updateTotalPrice(product);
+    document.getElementById(produkt.type).value = produkt.quantity;
+    document.getElementById(produkt.type + "-total").value = produkt.total;
 
-}
-
-// funktion som opdatere prisen for den enkelte vare (vare = kaffe-produkt)
-function updateTotalPrice(product){
-    // hent mængden (quantity) og pris-inputfeltet for den specifikke vare (vare = kaffe-produkt)
-    const quantity = parseInt(document.getElementById(product).value);
-
-    const price = parseInt(document.getElementById(product +"-price").value);
-
-    // Beregner totalprisen for denne specifikke vare 
-    const total = quantity * price;
-
-    document.getElementById(product +"-total").value = total;
-
-    // Opdater totalPrisen for alle vare
     totalPrice();
-
 }
 
-// funktion til at beregne og opdatere den samlede totalpris for alle varer i kurven
-function totalPrice(){
-    // variable til at holde styr på den samlede totalpris
-    let totalSum = 0;
+// Beregner den samlede pris for alle produkter i kurven
+function totalPrice() {
+    const totalSum = cart.reduce((sum, ele) => sum + ele.total, 0);
+    document.getElementById("totalSum").value = totalSum;
+}
 
-    //finder alle inputfelter der indeholde et id hvor "-total" indgår i slutningen af id tekst-strengen
-    // Fejl her manglede jeg at indsætte enkelt anførelses-tegn rundt om '-total' inde i querySelectorAll
-    
-    const productElements = document.querySelectorAll("[id$='-total']");
-
-    // looper gennem hvert produkt-element (coffee, espresso, americano) og lægger værdierne sammen
-    productElements.forEach(productElem => {
-        totalSum += parseInt(productElem.value);
+// Nulstiller hele kurven
+function resetEntireCart() {
+    cart.forEach(maybe => {
+        maybe.quantity = 0;
+        maybe.total = 0;
     });
 
-    document.getElementById('totalSum').value = totalSum;
+    updateUIFromCart();
+    saveCartToLocalStorage();
 }
