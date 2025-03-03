@@ -36,14 +36,6 @@
     src: url(fonts/roboto.ttf);
 }
 
-body {
-    background-image: url(../img/forside-01.png);
-    background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
-    background-position: center; /* Centrerer billedet */
-    background-repeat: no-repeat;
-    min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
-  }
-
   #kurv{
     display: flex;
     align-items: center;
@@ -140,3 +132,95 @@ h2{
     width: 12rem;
     margin-left: 2.5rem;
 }
+
+.startimg {
+    width: 120%;
+    margin-top: -20rem;
+
+}
+
+.nextsection {
+    margin-top: -25rem;
+    width: 100%
+}
+
+/* Sektionens styling */
+.flavor-section {
+    background-color: #d9e0c7; /* Lys grøn baggrund */
+    border-radius: 20px; /* Afrundede kanter */
+    padding: 40px;
+    margin: -80px auto 40px auto; /* Trækker sektionen op over billedet */
+    max-width: 1100px;
+    position: relative;
+    z-index: 2; /* Sikrer at sektionen vises ovenpå */
+}
+
+/* Flex-container for layout */
+.flavor-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Sikrer god responsivitet */
+}
+
+/* Billede-styling */
+.flavor-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tekstområde */
+.flavor-text {
+    max-width: 450px;
+}
+
+/* Overskrift */
+.flavor-text h4 {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -4rem;
+    font-family: sansita;
+}
+
+/* Linie under overskriften */
+.flavor-text hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+    width: 80%;
+    margin-left: 0;
+}
+
+/* Brødtekst */
+.flavor-text p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+/* Knap-styling */
+.flavor-button {
+    background-color: #c99343; /* Gylden farve */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Fjerner understregning */
+    font-family: roboto;
+}
+
+.flavor-button:hover {
+    background-color: #a87a36; /* Mørkere nuance */
+}
+
+/* Sikrer at baggrundsbilledet ikke skubbes ned */
+.next-section {
+    position: relative;
+    z-index: 1;
+    margin-top: -10rem;
+}
+

@@ -141,6 +141,7 @@ body {
     border-radius: 0.5rem;
     padding-bottom: 1rem;
     padding-top: 10rem;
+    z-index: -1;
 }
 
 /* Styling af beskrivelsesboks */
@@ -175,7 +176,7 @@ body {
 
 /* Stil for kassen, der indeholder alle valg */
 .description {
-    background-color: var(--creme);
+    background-color: #FEF1D7;
     padding: 2rem;
     border-radius: 2.5rem;
     box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
@@ -189,6 +190,7 @@ body {
     color: var(--dark-brown);
     font-family: decorya;
     letter-spacing: 0.1rem;
+    font-weight: bolder;
 }
 
 .description-text {
@@ -200,7 +202,7 @@ body {
 
 /* Quantity Box */
 .quantity-box {
-    background-color: var(--creme);
+    background-color: #FEF1D7;
     padding: 1rem;
     border-radius: 2.5rem;
     box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
@@ -211,7 +213,7 @@ body {
     width: 28%;
     margin-left: 38.1rem;
     margin-bottom: 5rem;
-    margin-top: -2rem;
+    margin-top: -3rem;
 }
 
 /* idividuelle Quantity Items */
