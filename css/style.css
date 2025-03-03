@@ -36,14 +36,6 @@
     src: url(fonts/roboto.ttf);
 }
 
-body {
-    background-image: url(../img/forside-01.png);
-    background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
-    background-position: center; /* Centrerer billedet */
-    background-repeat: no-repeat;
-    min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
-  }
-
   #kurv{
     display: flex;
     align-items: center;
@@ -55,6 +47,10 @@ body {
 
   #kurv:hover{
     transform: scale(1.1);
+  }
+
+  body {
+    background-color: black;
   }
 
 /* Navbar styling */
@@ -140,3 +136,284 @@ h2{
     width: 12rem;
     margin-left: 2.5rem;
 }
+
+.startimg {
+    width: 100%;
+    margin-top: -20rem;
+
+}
+
+.nextsection {
+    margin-top: -42rem;
+    width: 100%; /* Adjust as needed */
+    display: block;
+
+    /* Apply a mask gradient to fade the top and bottom */
+    -webkit-mask-image: linear-gradient(to bottom, transparent, white 20%, white 95%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, white 20%, white 95%, transparent);
+}
+
+/* Sektionens styling */
+.flavor-section {
+    background-color: #d9e0c7; /* Lys grøn baggrund */
+    border-radius: 20px; /* Afrundede kanter */
+    padding: 40px;
+    margin: 80px auto 40px auto; /* Trækker sektionen op over billedet */
+    max-width: 1100px;
+    position: relative;
+    z-index: 2; /* Sikrer at sektionen vises ovenpå */
+}
+
+/* Flex-container for layout */
+.flavor-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Sikrer god responsivitet */
+}
+
+/* Billede-styling */
+.flavor-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tekstområde */
+.flavor-text {
+    max-width: 450px;
+}
+
+/* Overskrift */
+.flavor-text h4 {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -4rem;
+    font-family: sansita;
+}
+
+/* Linie under overskriften */
+.flavor-text hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+    width: 80%;
+    margin-left: 0;
+}
+
+/* Brødtekst */
+.flavor-text p {
+    font-family: roberto;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+}
+
+/* Knap-styling */
+.flavor-button {
+    background-color: #c99343; /* Gylden farve */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Fjerner understregning */
+    font-family: roboto;
+}
+
+.flavor-button:hover {
+    background-color: #a87a36; /* Mørkere nuance */
+}
+
+/* Sikrer at baggrundsbilledet ikke skubbes ned */
+.next-section {
+    position: relative;
+    z-index: 1;
+    margin-top: -20rem;
+}
+
+/* Sikrer at baggrundsbilledet ikke skubbes ned */
+.nextsections {
+    position: relative;
+    z-index: 2;
+    margin-top: -50rem;
+    margin-top: -70rem;
+    width: 100%; /* Adjust as needed */
+    display: block;
+
+    /* Apply a mask gradient to fade the top and bottom */
+    -webkit-mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 95%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 4%, white 95%, transparent);
+}
+
+.flavor-images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.quality-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    background: url('../img/forside-02.png') center/cover no-repeat;
+    -webkit-mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 80%, transparent);
+    mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 4%, white 80%, transparent);
+    position: relative;
+    margin-top: -5rem;
+}
+
+
+.quality-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--creme);
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.quality-text {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+.quality-text h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: sansita;
+}
+
+.quality-text hr {
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin: 0.5rem auto;
+}
+
+.quality-text p {
+    font-size: 1rem;
+    color: #333;
+    margin: 1rem 0;
+    font-family: roboto;
+}
+
+.quality-button {
+    background-color: var(--curry);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: roboto;
+    display: inline-block;
+    margin-top: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quality-button:hover {
+    background-color: #b67c1e;
+}
+
+.quality-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quality-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Sektion baggrund */
+.benefits-section {
+    background: url('../img/aboutpages/backgrounds/Lakrids.png') center/cover no-repeat;
+    padding: 5rem 2rem;
+    text-align: center;
+    position: relative;
+    /* Fade effect i toppen */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 80%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 4%);
+}
+
+/* Container for bokse */
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+/* Styling af boksene */
+.benefits-box {
+    background-color: var(--light-yellow);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+.benefits-box h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sansita;
+    color: var(--dark-brown);
+}
+
+.benefits-box hr {
+    border: none;
+    height: 2px;
+    background-color: var(--dark-brown);
+    width: 50%;
+    margin: 0.5rem auto;
+}
+
+.benefits-box p {
+    font-size: 1.1rem;
+    color: var(--dark-brown);
+    font-family: roboto;
+}
+
+/* Dekorativ stiplet linje */
+.dashed-line {
+    width: 200px;
+    height: 50px;
+    background: url('img/dashed-line.svg') center/contain no-repeat;
+    margin: 2rem auto;
+}
+
+/* Knap styling */
+.benefits-button {
+    display: inline-block;
+    background-color: var(--curry);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.benefits-button:hover {
+    background-color: #a87a36;
+}
+
+
+

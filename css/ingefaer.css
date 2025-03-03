@@ -135,12 +135,13 @@ body {
 
 /* Sikrer, at dåse-billedet skaleres korrekt */
 .can-image {
-    max-width: 250%;
-    max-height: 250%;
+    max-width: 258%;
+    max-height: 258%;
     object-fit: contain;
     border-radius: 0.5rem;
     padding-bottom: 1rem;
     padding-top: 10rem;
+    z-index: -1;
 }
 
 /* Styling af beskrivelsesboks */

@@ -41,7 +41,7 @@ body {
     background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat;
-    min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
+    min-height: 80vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
   }
 
   #kurv{
@@ -51,6 +51,9 @@ body {
     top: 0.4rem;
     width: 3.5rem;
   }
+
+
+
 
 /* Navbar styling */
 .navbar {
@@ -72,21 +75,62 @@ body {
     width: 3.2rem;
     margin-left: 0.5rem;
  } 
-/*_______________________*/
+/*_____________________________________________*/
+
+
 
 
 /* 404 kasse */
-
 section.side-404 {
 display: flex;
 align-items: center;
-justify-content: center;
+justify-content: space-around;
+background-color: #C9D9B9;
+margin: 16rem 16rem 0rem 16rem;
+padding: 2rem 3rem 2rem 3rem;
+border-radius: 1.5rem;
+box-shadow: 1rem 1rem 0.3rem hsl(0deg 0% 0% / 27%);
+}
+
+article.tekstbox-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
 }
 
 img.billede-404 {
-    width: 15rem;
+    width: 12rem;
 }
 
+p.tekst-404 {
+    margin: 0rem 0rem 2rem 0rem;
+    font-size: 3.5rem;
+    font-family: sansita;
+}
+
+p.knap-404 {
+    font-size: 1rem;
+    background-color: #DC9924;
+    color: #F1EAD5;
+    border-radius: 0.5rem;
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    font-family: roboto;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+p.knap-404:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    color: #000000;
+    transition: 0.3s ease-in-out;
+}
+
+section article a {
+    text-decoration: none;
+    color: #000000;
+}
+/*_____________________________________________*/
 
 
 
@@ -123,4 +167,32 @@ img.billede-404 {
 #forside, #shop, #anmeldelser{
     font-weight: 500;
 }
-/*_______________________*/
+/*_____________________________________________*/
+
+
+
+/* Footer */
+footer{
+    background-color: var(--darker-green);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 8rem;
+}
+
+footer h4{
+    font-size: 1rem;
+    text-decoration: none;
+    top: 18%;
+    left: 13rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+footer img{
+    width: 8rem;
+    position: absolute;
+    top: 18%;
+    left: 2.3rem;
+}
+/*_____________________________________________*/

@@ -38,7 +38,7 @@
 }
 
 body {
-    background-image: url(../img/aboutpages/backgrounds/hyldeblomst.png);
+    background-image: url(../img/aboutpages/backgrounds/hyldeblomst-about.webp);
     background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat;
@@ -141,6 +141,7 @@ body {
     border-radius: 0.5rem;
     padding-bottom: 1rem;
     padding-top: 10rem;
+    z-index: -1;
 }
 
 /* Styling af beskrivelsesboks */
@@ -176,7 +177,7 @@ body {
 
 /* Stil for kassen, der indeholder alle valg */
 .description {
-    background-color: var(--creme);
+    background-color: #F1FBE6;
     padding: 2rem;
     border-radius: 2.5rem;
     box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
@@ -187,21 +188,22 @@ body {
 .description-title {
     font-size: 3rem;
     margin-bottom: 0.1rem;
-    color: var(--dark-brown);
+    color: var(--dark-green);
     font-family: decorya;
     letter-spacing: 0.1rem;
+    font-weight: bolder;
 }
 
 .description-text {
     font-size: 1.2rem;
     line-height: 1.5;
-    color: var(--dark-brown);
+    color: var(--dark-green);
     font-family: roboto;
 }
 
 /* Quantity Box */
 .quantity-box {
-    background-color: var(--creme);
+    background-color: #F1FBE6;
     padding: 1rem;
     border-radius: 2.5rem;
     box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
