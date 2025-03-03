@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -44,15 +45,17 @@ body {
     min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
   }
 
-  .logo{
-    margin: 1rem;
-    padding-top: 4rem;
-  }
-
   #kurv{
     display: flex;
     align-items: center;
-    margin-left: 1.5rem;
+    margin-left: 4.8rem;
+    top: 0.4rem;
+    width: 3.5rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  #kurv:hover{
+    transform: scale(1.1);
   }
 
 /* Navbar styling */
@@ -60,19 +63,27 @@ body {
     display: flex;
     justify-content: flex-start; /* Sørger for at logo + menu starter fra venstre */
     align-items: center;
-    background-color: #f1ead529;
-    padding: 0.5rem;
+    background-color:#73885ac4;;
+    padding: 0.8rem 1rem; /* Gør navbaren smallere i højden */
+    height: 4.8rem; /* Sæt en fast højde, hvis nødvendigt */
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
 }
 
+.logo img{
+    position: fixed;
+    top: 0.8rem;
+    width: 3.2rem;
+    margin-left: 0.5rem;
+ } 
+
 /* Navigation links */
 .nav-links {
     list-style: none;
     display: flex;
-    margin-left: 26rem;
+    margin-left: 35.5rem;
 }
 
 .nav-links li {
@@ -84,10 +95,179 @@ body {
 .nav-links a {
     color: var(--creme);
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     transition: 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
     color: var(--curry);
+}
+
+/* Hovedindholdets layout */
+.page {
+    font-family: roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container til dåse og beskrivelse */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    max-width: 90%;
+    padding-left: 15rem;
+    padding-top: 5rem;
+}
+
+/* Stil for øl-dåsen */
+.can {
+    width: 30%;
+    height: 58vh;
+    background-color:#42592d00 ;
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Sikrer, at dåse-billedet skaleres korrekt */
+.can-image {
+    max-width: 258%;
+    max-height: 258%;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    padding-bottom: 1rem;
+    padding-top: 10rem;
+}
+
+/* Styling af beskrivelsesboks */
+.label {
+    background-color: var(--creme);
+    width: 80%;
+    height: 70%;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+/* Stil for overskriften i beskrivelsen */
+.label-title {
+    font-size: 3rem;
+    margin: 0;
+    color: var(--darker-green);
+    font-family: sansita;
+}
+
+/* Stil for brødteksten i beskrivelsen */
+.label-text {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: var(--darker-green);
+    font-family: roboto;
+}
+
+/* Stil for kassen, der indeholder alle valg */
+.description {
+    background-color: var(--creme);
+    padding: 2rem;
+    border-radius: 2.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.1);
+    max-width: 60%;
+}
+
+/* Stil for hvert enkelt valg (enkelt dåse, 6-pack, 24-pack) */
+.description-title {
+    font-size: 3rem;
+    margin-bottom: 0.1rem;
+    color: var(--dark-brown);
+    font-family: decorya;
+    letter-spacing: 0.1rem;
+}
+
+.description-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: var(--dark-brown);
+    font-family: roboto;
+}
+
+/* Quantity Box */
+.quantity-box {
+    background-color: var(--creme);
+    padding: 1rem;
+    border-radius: 2.5rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 28%;
+    margin-left: 38.1rem;
+    margin-bottom: 5rem;
+    margin-top: -2rem;
+}
+
+/* idividuelle Quantity Items */
+.quantity-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Fjerner den nederste kant på det sidste element */
+.quantity-item:last-child {
+    border-bottom: none;
+}
+
+/* Stil for knapperne og antal-displayet */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Styling for knapperne (+/-) */
+.quantity-controls button {
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+/* Stil for tallet, der viser hvor mange enheder der er valgt */
+.quantity-controls span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-brown);
+}
+
+/* Sørger for, at billederne ikke forvrænges */
+.quantity-item img {
+    height: auto;
+}
+
+/* Justerer størrelsen på de enkelte billeder individuelt */
+.quantity-item .can-icon {
+    width: 1.5rem;
+}
+
+.quantity-item .pack6-icon {
+    width: 60px;
+}
+
+.quantity-item .pack24-icon {
+    width: 80px;
 }
