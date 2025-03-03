@@ -63,7 +63,7 @@ body {
     display: flex;
     justify-content: flex-start; /* Sørger for at logo + menu starter fra venstre */
     align-items: center;
-    background-color:#41220c67; ;
+    background-color:#23120667; ;
     padding: 0.8rem 1rem; /* Gør navbaren smallere i højden */
     height: 3.8rem; /* Sæt en fast højde, hvis nødvendigt */
     position: fixed;
@@ -135,8 +135,8 @@ body {
 
 /* Sikrer, at dåse-billedet skaleres korrekt */
 .can-image {
-    max-width: 250%;
-    max-height: 250%;
+    max-width: 150%;
+    max-height: 150%;
     object-fit: contain;
     border-radius: 0.5rem;
     padding-bottom: 1rem;
