@@ -38,7 +38,7 @@
 }
 
 body {
-    background-image: url(../img/aboutpages/backgrounds/Ingefær.png);
+    background-image: url(../img/aboutpages/backgrounds/ingefaer.png);
     background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@ body {
     display: flex;
     justify-content: flex-start; /* Sørger for at logo + menu starter fra venstre */
     align-items: center;
-    background-color:#42592d6b; ;
+    background-color:#41220c5e; ;
     padding: 0.8rem 1rem; /* Gør navbaren smallere i højden */
     height: 4.8rem; /* Sæt en fast højde, hvis nødvendigt */
     position: fixed;
@@ -188,6 +188,7 @@ body {
     margin-bottom: 0.1rem;
     color: var(--dark-brown);
     font-family: decorya;
+    letter-spacing: 0.1rem;
 }
 
 .description-text {
