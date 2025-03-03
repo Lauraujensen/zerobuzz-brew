@@ -52,6 +52,9 @@ body {
     width: 3.5rem;
   }
 
+
+
+
 /* Navbar styling */
 .navbar {
     display: flex;
@@ -72,11 +75,12 @@ body {
     width: 3.2rem;
     margin-left: 0.5rem;
  } 
-/*_______________________*/
+/*_____________________________________________*/
+
+
 
 
 /* 404 kasse */
-
 section.side-404 {
 display: flex;
 align-items: center;
@@ -126,7 +130,7 @@ section article a {
     text-decoration: none;
     color: #000000;
 }
-
+/*_____________________________________________*/
 
 
 
@@ -163,4 +167,32 @@ section article a {
 #forside, #shop, #anmeldelser{
     font-weight: 500;
 }
-/*_______________________*/
+/*_____________________________________________*/
+
+
+
+/* Footer */
+footer{
+    background-color: var(--darker-green);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 8rem;
+}
+
+footer h4{
+    font-size: 1rem;
+    text-decoration: none;
+    top: 18%;
+    left: 13rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+footer img{
+    width: 8rem;
+    position: absolute;
+    top: 18%;
+    left: 2.3rem;
+}
+/*_____________________________________________*/
