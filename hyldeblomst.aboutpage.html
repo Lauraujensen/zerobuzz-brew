@@ -13,22 +13,76 @@
     <meta name="author" content="ZeroBuzz Brew">
 
     <title>ZeroBuzz Brew</title>
-    <link rel="stylesheet" href="../css/hyldeblomst.css">
+    <link rel="stylesheet" href="./css/citron.css">
 </head>
 <body>
     
     <nav class="navbar">
-        <a href="index.html" class="logo"></a>
-        <a href="index.html"><img src="../img/bee-logo.svg" alt="Logo"></a>
+        <a class="logo" href="index.html"><img src="img/creme-bee.svg" alt="Logo"></a>
         <ul class="nav-links">
             <li><a id="forside" href="index.html">Forside</a></li>
             <li><a id="shop" href="beer-katalog.html">Shop</a></li>
             <li><a id="om-os" href="about-us.html">Om os</a></li>
             <li><a id="anmeldelser" href="reviews.html">Anmeldelser</a></li>
         </ul>
-        <a href="checkout.html"><img id="kurv" src="../img/kurv.png" alt="Indkøbskurv"></a>
+        <a href="checkout.html"><img id="kurv" src="img/kurv.png" alt="Indkøbskurv"></a>
     </nav>
 
-    <script src="js/script.js"></script>
+    <main class="page">
+       <!-- Indpakning af hovedindholdet for bedre struktur -->
+        <section class="content-wrapper">
+                <!-- Sektion der indeholder produktbillede og beskrivelse -->
+            <section class="container">
+                <!-- Billede af øl-dåsen -->
+                <section class="can">
+                    <img src="./img/daaser/citron.png" alt="ZeroBuzz Brew dåse" class="can-image">
+                </section>
+
+                <!-- Beskrivelsen af øllen -->
+                <section class="description">
+                    <h1 class="description-title">CITRON</h1>
+                    <p class="description-text">Lad dig forføre af den perfekte balance mellem friskhed og fylde med vores alkoholfri øl med citronsmag. Brygget på aromatiske humlesorter og tilsat naturlig citron, får du en let og sprudlende øl med en dejlig syrlig friskhed og bløde malttoner. Den livlige citrusnote giver en forfriskende og sommerlig smagsoplevelse – ideel til varme dage eller når du bare har lyst til noget let og læskende. En sprød og solrig øl – uden alkohol, men med masser af smag!</p>
+                </section>
+            </section>
+
+                <!-- Sektion til valg af antal -->
+            <section class="quantity-box">
+                <div class="quantity-item">
+                <!-- Enkelt dåse -->
+                    <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
+                    <p>1 stk.</p>
+                    <div class="quantity-controls">
+                        <button onclick="adjustQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="adjustQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+                <!-- 6-pack -->
+                <div class="quantity-item">
+                    <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
+                    <p>6 stk.</p>
+                    <div class="quantity-controls">
+                        <button onclick="adjustQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="adjustQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+                <!-- 24-pack -->
+                <div class="quantity-item">
+                    <img src="./img/24pack.png" alt="24-pack" class="pack24-icon">
+                    <p>24 stk.</p>
+                    <div class="quantity-controls">
+                        <button onclick="adjustQuantity(this, -1)">-</button>
+                        <span class="quantity">1</span>
+                        <button onclick="adjustQuantity(this, 1)">+</button>
+                    </div>
+                </div>
+            </section>
+</main>            
+
+
+
+                         
+    <script src="js/classic.js"></script>
 </body>
 </html>
