@@ -147,7 +147,7 @@ a {
     align-items: center;
 }
 
-.container {
+.info-container {
     position: relative;
     background-color: #73885A;
     width: 25rem;
@@ -161,7 +161,7 @@ a {
     justify-content: flex-end;
 }
 
-.container img {
+.info-container #infographic {
     max-height: 100%; /* Sørger for, at billedet ikke bliver højere end containeren */
     width: 80rem;
     position: absolute;
@@ -288,7 +288,7 @@ h4 {
 }
 
 h4.classic-pris {
-    margin: 0rem 0rem 5rem 0rem;
+    /* margin: 0rem 0rem 5rem 0rem; */
 }
 
 .special-beer-container-02 {
@@ -379,3 +379,95 @@ footer article p:hover {
     cursor: pointer;
 }
 /*_____________________________________________*/
+
+.mulighedsknapper{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 0.75rem;
+    background-color: orange;
+    border: none;
+    z-index: 2;
+    
+}
+.mulighedsknapper img {
+    transition: transform 0.3s ease; /* Giver en glidende effekt ved rotation */
+}
+
+
+.quantity-box {
+    display: none;
+    background-color: var(--light-green);
+    padding: 1rem;
+    border-radius: 2.5rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.1);
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 26%;
+    
+    margin-bottom: 8rem;
+    margin-top: -6rem;
+}
+
+/* idividuelle Quantity Items */
+.quantity-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Fjerner den nederste kant på det sidste element */
+.quantity-item:last-child {
+    border-bottom: none;
+}
+
+/* Stil for knapperne og antal-displayet */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Styling for knapperne (+/-) */
+.quantity-controls button {
+    background-color: var(--dark-green);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+/* Stil for tallet, der viser hvor mange enheder der er valgt */
+.quantity-controls span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-brown);
+}
+
+/* Sørger for, at billederne ikke forvrænges */
+.quantity-item img {
+    height: auto;
+}
+
+/* Justerer størrelsen på de enkelte billeder individuelt */
+.quantity-item .can-icon {
+    width: 1.5rem;
+}
+
+.quantity-item .pack6-icon {
+    width: 60px;
+}
+
+.quantity-item .pack24-icon {
+    width: 80px;
+}
+

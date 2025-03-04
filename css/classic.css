@@ -234,6 +234,7 @@ h2:hover{
 
 /* Quantity Box */
 .quantity-box {
+    
     background-color: var(--creme);
     padding: 1rem;
     border-radius: 2.5rem;

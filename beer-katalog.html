@@ -30,12 +30,47 @@
     </nav>
 
 
-    <section id="top" class="container">
-        <img src="img/infographic-smaller.png" alt="">
+    <section id="top" class="info-container">
+        <img src="img/infographic-smaller.png" alt="" id="infographic">
         <a href="classic-aboutpage.html"><h1>Classic</h1></a>
         <a href="classic-aboutpage.html"><h3 class="special-description">Klassisk Buzz Brew 0,0%</h3></a>
-        <h4 class="classic-pris">16 kr.</h4>    
+        <h4 class="classic-pris">16 kr.</h4>
+
+        <button class="mulighedsknapper" onclick="visClKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="classic-pil"></button>
     </section>
+    
+        <article class="quantity-box" id="classic-knapper">
+            <div class="quantity-item">
+            <!-- Enkelt dåse -->
+                <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
+                <p>1 stk.</p>
+                <div class="quantity-controls">
+                    <button onclick="adjustQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button onclick="adjustQuantity(this, 1)">+</button>
+                </div>
+            </div>
+            <!-- 6-pack -->
+            <div class="quantity-item">
+                <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
+                <p>6 stk.</p>
+                <div class="quantity-controls">
+                    <button onclick="adjustQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button onclick="adjustQuantity(this, 1)">+</button>
+                </div>
+            </div>
+            <!-- 24-pack -->
+            <div class="quantity-item">
+                <img src="./img/24pack.png" alt="24-pack" class="pack24-icon">
+                <p>24 stk.</p>
+                <div class="quantity-controls">
+                    <button onclick="adjustQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button onclick="adjustQuantity(this, 1)">+</button>
+                </div>
+            </div>
+        </article>
 
     <section class="container-special-overskrift">
         <p id="special-h2">Special</p>
@@ -48,13 +83,48 @@
             <a href="lakrids-aboutpage.html"><img class="can-img lakrids" src="img/lakrids.webp" alt="Lakrids øldåse"></a>
             <a href="lakrids-aboutpage.html"><h3 class="special-description" id="lakrids-h3">Specialøl m. Lakrids 0,0%</h3></a>
             <h4>16 kr.</h4>
+            <button class="mulighedsknapper" onclick="visLaKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="lakrids-pil"></button>
         </section>
         
+        <article class="quantity-box" id="lakrids-knapper">
+            <div class="quantity-item">
+            <!-- Enkelt dåse -->
+                <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
+                <p>1 stk.</p>
+                <div class="quantity-controls">
+                    <button onclick="adjustQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button onclick="adjustQuantity(this, 1)">+</button>
+                </div>
+            </div>
+            <!-- 6-pack -->
+            <div class="quantity-item">
+                <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
+                <p>6 stk.</p>
+                <div class="quantity-controls">
+                    <button onclick="adjustQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button onclick="adjustQuantity(this, 1)">+</button>
+                </div>
+            </div>
+            <!-- 24-pack -->
+            <div class="quantity-item">
+                <img src="./img/24pack.png" alt="24-pack" class="pack24-icon">
+                <p>24 stk.</p>
+                <div class="quantity-controls">
+                    <button onclick="adjustQuantity(this, -1)">-</button>
+                    <span class="quantity">1</span>
+                    <button onclick="adjustQuantity(this, 1)">+</button>
+                </div>
+            </div>
+        </article>
+
         <section class="special-beer">
             <a href="ingefaer-aboutpage.html"><h2 class="can-names" id="ginger-h2">Ingefær</h2></a>
             <a href="ingefaer-aboutpage.html"><img class="can-img ginger" src="img/ginger.webp" alt="Ingefær øldåse"></a>
             <a href="ingefaer-aboutpage.html"><h3 class="special-description" id="ginger-h3">Specialøl m. Ingefær 0,0%</h3></a>
             <h4>16 kr.</h4>
+            <button class="mulighedsknapper" onclick="visInKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="ingefaer-pil"></button>
         </section>
         
         <section class="special-beer">
@@ -62,6 +132,7 @@
             <a href="citron-aboutpage.html"><img class="can-img citron" src="img/citron.webp" alt="Citron øldåse"></a>
             <a href="citron-aboutpage.html"><h3 class="special-description" id="citron-h3">Specialøl m. Citron 0,0%</h3></a>
             <h4>16 kr.</h4>
+            <button class="mulighedsknapper" onclick="visCiKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="citron-pil"></button>
         </section>
     </section>
 
@@ -73,6 +144,7 @@
             <a href="hyldeblomst.aboutpage.html"><img class="can-img hyldeblomst" src="img/hyldeblomst.webp" alt="Hyldeblomst øldåse"></a>
             <a href="hyldeblomst.aboutpage.html"><h3 class="special-description" id="hyldeblomst-h3">Specialøl m. Hyldeblomst 0,0%</h3></a>
             <h4>16 kr.</h4>
+            <button class="mulighedsknapper" onclick="visHylKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="hyldeblomst-pil"></button>
         </section>
         
         <section class="special-beer">
