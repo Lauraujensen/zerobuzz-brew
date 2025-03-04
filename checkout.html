@@ -28,13 +28,15 @@
         <a href="checkout.html"><img id="kurv" src="img/kurv.png" alt="Indkøbskurv"></a>
     </nav>
 
-    <section class="overskrifter">
-        <h3>Mine varer</h3>
-        <h3>Antal</h3>
-    </section>
+    <main>
+        <article>
+            <section class="overskrifter">
+                <h3>Mine varer</h3>
+                <h3>Antal</h3>
+            </section>
 
-    <section class="alle-valgte">
-        <article class="first">
+            <section class="alle-valgte">
+        <article class="first can">
             <h4 class="samlet-type-pris">Samlet pris:</h4><!--jeg ved ikke om der er behov for den her-->
             <input type="number" name="produktSum" id="classicSum" value="0" class="form-control" disabled><!--samlet classicpris-felt-->
             <button class="btn-slet-produkt" onclick="removeEntireClassic('classic');">Tøm</button>
@@ -65,7 +67,7 @@
             </section>             
         </article>
 
-        <article class="second">
+        <article class="second can">
             <h4 class="samlet-type-pris">Samlet pris:</h4><!--jeg ved ikke om der er behov for den her-->
             <input type="number" name="produktSum" id="lakridsSum" value="0" class="form-control" disabled><!--samlet lakridspris-felt-->
             <button class="btn-slet-produkt" onclick="removeEntireLakrids('lakrids');">Tøm</button>
@@ -92,7 +94,7 @@
             </section>         
         </article>
 
-        <article class="third">
+        <article class="third can">
             <h4 class="samlet-type-pris">Samlet pris:</h4><!--jeg ved ikke om der er behov for den her-->
             <input type="number" name="produktSum" id="ingefaerSum" value="0" class="form-control" disabled><!--samlet ingefærpris-felt-->
             <button class="btn-slet-produkt" onclick="removeEntireIngefaer('ingefaer');">Tøm</button>
@@ -121,7 +123,7 @@
             </section>
         </article>
 
-        <article class="fourth">
+        <article class="fourth can">
             <h4 class="samlet-type-pris">Samlet pris:</h4><!--jeg ved ikke om der er behov for den her-->
             <input type="number" name="produktSum" id="citronSum" value="0" class="form-control" disabled><!--samlet citronpris-felt-->
             <button class="btn-slet-produkt" onclick="removeEntireCitron('citron');">Tøm</button>
@@ -147,7 +149,7 @@
             </section>          
         </article>
 
-        <article class="fith">
+        <article class="fith can">
             <h4 class="samlet-type-pris">Samlet pris:</h4><!--jeg ved ikke om der er behov for den her-->
             <input type="number" name="produktSum" id="hyldeblomstSum" value="0" class="form-control" disabled><!--samlet hyldeblomstpris-felt-->
             <button class="btn-slet-produkt" onclick="removeEntireHyldeblomst('hyldeblomst');">Tøm</button>
@@ -175,11 +177,23 @@
             </section>
         </article>
         
-    </section>
-    <section class="totalpris">
-        <input type="number" name="totalSum" id="totalSum" value="0" class="form-control" disabled> <!--den absolute total pris-felt-->
-        <button class="btn-slet-alt" onclick="resetEntireCart();">Slet alt</button> <!--slet alle produkter-->
-    </section>
+            </section>
+        </article>
+
+        <section class="totalpris">
+            <input type="number" name="totalSum" id="totalSum" value="0" class="form-control" disabled> <!--den absolute total pris-felt-->
+            <button class="btn-slet-alt" onclick="resetEntireCart();">Slet alt</button> <!--slet alle produkter-->
+        </section>
+    </main>
+
+    <footer>
+        <article class="footer-info">
+            <p class="bold-tekst">Kontakt</p>
+            <p>aar@zerobuzzbrew.dk</p>
+            <p>Tlf. 12 34 56 78</p>
+        </article>
+        <a href="#top"><img src="img/bee-logo.svg" alt="Logo"></a>
+    </footer>
 
     <script src="js/script.js"></script>
     <script src="js/local-storage.js"></script>
