@@ -429,3 +429,51 @@ h2{
 
 
 
+/* Footer */
+footer{
+    background-color: var(--curry);
+    position: relative;
+    width: 100%;
+    height: 8rem;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer h4{
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+footer img{
+    width: 8rem;
+    margin: 0rem 2rem 0rem 1rem;
+}
+
+article.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer article p {
+    margin: 0.3rem 0rem;
+    color: #F1EAD5;
+    font-family: roboto;
+    font-weight: 300;
+}
+
+.bold-tekst {
+    font-weight: bold;
+}
+
+footer article p:hover {
+    color: #a87a36;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+/*_____________________________________________*/
