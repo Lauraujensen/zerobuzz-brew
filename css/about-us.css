@@ -58,6 +58,11 @@ body {
     width: 3.5rem;
 }
 
+#kurv:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -76,6 +81,11 @@ body {
     position: relative;
     width: 3.2rem;
     margin-left: 0.5rem;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
 
 .nav-links {

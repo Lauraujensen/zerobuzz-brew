@@ -69,6 +69,11 @@ a {
     width: 3.5rem;
 }
 
+#kurv:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -87,6 +92,11 @@ a {
     position: relative;
     width: 3.2rem;
     margin-left: 0.5rem;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
 
 .nav-links {
@@ -112,12 +122,12 @@ a {
     color: var(--curry);
 }
 
-#om-os{
+#shop{
     text-decoration: underline;
     font-weight: bolder;
 }
 
-#forside, #shop, #anmeldelser{
+#forside, #om-os, #anmeldelser{
     font-weight: 500;
 }
 /*_____________________________________________*/

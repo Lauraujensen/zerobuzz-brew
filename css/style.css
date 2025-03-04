@@ -36,27 +36,30 @@
     src: url(fonts/roboto.ttf);
 }
 
-  #kurv{
-    display: flex;
-    align-items: center;
-    margin-left: 4.8rem;
-    top: 0.4rem;
-    width: 3.5rem;
-    transition: 0.3s ease-in-out;
-  }
-
-  #kurv:hover{
-    transform: scale(1.1);
-  }
-
-  body {
+body {
     background-color: black;
-  }
+}
+
+
+
 
 /* Navbar styling */
+#kurv {
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 0.5rem;
+    width: 3.5rem;
+}
+
+#kurv:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
 .navbar {
     display: flex;
-    justify-content: flex-start; /* Sørger for at logo + menu starter fra venstre */
+    justify-content: space-between;
     align-items: center;
     background-color: #f1ead555;
     padding: 0.8rem 1rem; /* Gør navbaren smallere i højden */
@@ -65,20 +68,24 @@
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
-.logo img{
-    position: fixed;
-    top: 0.8rem;
+.logo img {
+    position: relative;
     width: 3.2rem;
     margin-left: 0.5rem;
- } 
+}
 
-/* Navigation links */
+.logo img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
-    margin-left: 35.5rem;
+    margin-left: 30rem;
 }
 
 .nav-links li {
@@ -106,6 +113,11 @@
 #shop, #om-os, #anmeldelser{
     font-weight: 500;
 }
+/*_____________________________________________*/
+
+
+
+
 
 .logo-text{
     position: absolute;
