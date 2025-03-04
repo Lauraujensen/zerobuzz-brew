@@ -17,7 +17,7 @@
 //   resizeInput(document.getElementById("about-la-enkelt")); // Initial tilpasning
 
    // Find input-felter kun for det valgte produkt
-   let inputFelter = document.querySelectorAll(`input[name="${produkt}"], input[id="about-${produkt}-enkelt"]`);
-   inputFelter.forEach(input => {
-       input.value = spladd ? spladd.quantity : 0;
-   });
+//    let inputFelter = document.querySelectorAll(`input[name="${produkt}"], input[id="about-${produkt}-enkelt"]`);
+//    inputFelter.forEach(input => {
+//        input.value = spladd ? spladd.quantity : 0;
+//    });
