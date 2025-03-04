@@ -37,6 +37,8 @@
 }
 
 
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -112,6 +114,15 @@ html{
     font-weight: 500;
 }
 
+
+
+
+
+
+
+
+
+
 .container {
     position: absolute;
     top: 44%;
@@ -159,6 +170,12 @@ h2{
     z-index: 2;
     position: absolute;
     top: 82%;
+    width: 14rem;
+    left: 25%;
+}
+
+h2:hover{
+    font-weight: 500;
 }
 
 h3{
@@ -194,6 +211,7 @@ h3{
     justify-content: center;
     position: absolute;
     top: 3%;
+    left: 42%;
 }
 
 .special-beer-container {
@@ -213,7 +231,6 @@ h3{
     background-color: #73885A;
     width: 25rem;
     height: 45rem;
-    z-index: -1;
     border-radius: 4rem;
     display: flex;
     justify-content: center;
@@ -228,13 +245,12 @@ h3{
 }
 
 .can-names:hover{
-    transform: scale(1.02);
     cursor: pointer;
     color: var(--curry);
 }
 
 #ginger-h2{
-    margin-left: 4rem;
+    margin-left: 15rem;
 }
 
 #lakrids-h2{
@@ -242,11 +258,16 @@ h3{
 }
 
 #citron-h2{
-    right: 12.2%;
+    margin-left: 44.5rem;
 }
 
 .can-img {
     width: 18rem;
+    transition: ease-in 0.3s;
+}
+
+.can-img:hover{
+    transform: scale(1.01);
 }
 
 .lakrids{
@@ -271,6 +292,11 @@ h3{
     color: var(--creme);
     position: absolute;
     top: 84%;
+    margin-left: -8rem;
+}
+
+.special-description:hover{
+    font-weight: 500;
 }
 
 h4{
@@ -297,19 +323,6 @@ h4{
     width: 90rem;
 }
 
-.can-names{
-    font-size: 3rem;
-    font-family: sansita;
-    top: 5%;
-    transition: 0.3s ease-in-out;
-}
-
-.can-names:hover{
-    transform: scale(1.02);
-    cursor: pointer;
-    color: var(--curry);
-}
-
 #hyldeblomst-h2{
     left: 6%;
 }
@@ -322,12 +335,44 @@ h4{
     font-size: 2.8rem;
     font-family: sansita;
     text-transform: uppercase;
+    position: absolute;
     top: 50%;
+    width: 17.5rem;
+    z-index: 10;
+}
+
+#mystery-description-01{
+    left: 73%;
+}
+
+#mystery-description-02{
+    left: 39%;
 }
 
 .mystery{
-    width: 16.5rem;
+    width: 17.5rem;
 }
+
+
+
+
+#lakrids-h3{
+    left: 17%;
+}
+
+#ginger-h3{
+    left: 51%;
+}
+
+#citron-h3{
+    left: 85.4%;
+}
+
+#hyldeblomst-h3{
+    left: 15%;
+}
+
+
 
 footer{
     background-color: var(--darker-green);
