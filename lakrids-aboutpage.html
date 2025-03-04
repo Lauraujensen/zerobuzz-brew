@@ -54,10 +54,14 @@
                     <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
                     <p>1 stk.</p>
                     <div class="quantity-controls">
-                        <button onclick="adjustQuantity(this, -1)">-</button>
+                        <!--<button onclick="adjustQuantity(this, -1)">-</button>
                         <span class="quantity">1</span>
-                        <button onclick="adjustQuantity(this, 1)">+</button>
+                        <button onclick="adjustQuantity(this, 1)">+</button>-->
+                        <button class="btn-minus-enkelt" onclick="removeOneFromCart('lakrids');">-</button>
+                        <input type="number" name="lakrids" id="about-la-enkelt" value="0" oninput="resizeInput(this)" class="form-control" disabled>
+                        <button class="btn-plus-enkelt" onclick="addOneToCart('lakrids');">+</button>
                     </div>
+                    
                 </div>
                 <!-- 6-pack -->
                 <div class="quantity-item">
@@ -86,5 +90,8 @@
 
                          
     <script src="js/classic.js"></script>
+    <script src="js/local-storage.js"></script>
+    <script src="js/cl-counter.js"></script>
+    
 </body>
 </html>
