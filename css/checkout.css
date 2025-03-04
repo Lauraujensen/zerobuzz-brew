@@ -37,12 +37,13 @@
 }
 
 body {
-    background-image: url(../img/#);
-    background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
-    background-position: center; /* Centrerer billedet */
+    background-image: url(../img/check-out-background.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
-  }
+    min-height: 100vh;
+    padding-top: 1rem; /* Skubber alt indhold ned, så det ikke ligger bag navbaren */
+}
+
 
   #kurv{
     display: flex;
@@ -57,7 +58,7 @@ body {
     display: flex;
     justify-content: flex-start; /* Sørger for at logo + menu starter fra venstre */
     align-items: center;
-    background-color: #192809b3;
+    background-color:#301706;
     padding: 0.8rem 1rem; /* Gør navbaren smallere i højden */
     height: 4.8rem; /* Sæt en fast højde, hvis nødvendigt */
     position: fixed;
@@ -112,3 +113,194 @@ button:hover{
 .enkelt-produkt-pris{
     display: none;
 }
+
+/*_____________________________________________*/
+/* Main styling*/
+
+.overskrifter {
+    background-color: var(--creme);
+    width: 30rem; /* Gør den bredere, så der er plads */
+    position: absolute;
+    font-family: sansita;
+    top: 15%;
+    left: 26%;
+    border-radius: 0.4rem;
+    transform: translate(-50%, -50%);
+    color: black;
+    min-height: 4rem;
+    
+    display: flex;  /* Aktiver flexbox */
+    justify-content: space-between; /* Fordel pladsen mellem elementerne */
+    align-items: center; /* Centrer dem vertikalt */
+    padding: 0 1.5rem; /* Giv lidt plads indeni */
+}
+
+.first{
+    background-color: var(--creme);
+    width: 30rem; /* Gør den bredere, så der er plads */
+    position: absolute;
+    font-family: sansita, roboto;
+    top: 35%;
+    left: 26%;
+    border-radius: 0.4rem;
+    transform: translate(-50%, -50%);
+    color: black;
+    min-height: 4rem;
+    padding: 1rem
+}
+
+.btn-slet-produkt{
+    background-color: #DC9924;
+    color: var(--creme);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.type-navn{
+    margin-top: 1rem;
+    font-family: roboto;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+.second{
+    background-color: var(--creme);
+    width: 30rem; /* Gør den bredere, så der er plads */
+    position: absolute;
+    font-family: sansita, roboto;
+    top: 62%;
+    left: 26%;
+    border-radius: 0.4rem;
+    transform: translate(-50%, -50%);
+    color: black;
+    min-height: 4rem;
+    padding: 1rem
+}
+
+.btn-slet-produkt{
+    background-color: #DC9924;
+    color: var(--creme);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.type-navn{
+    margin-top: 1rem;
+    font-family: roboto;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.third{
+    background-color: var(--creme);
+    width: 30rem; /* Gør den bredere, så der er plads */
+    position: absolute;
+    font-family: sansita, roboto;
+    top: 89%;
+    left: 26%;
+    border-radius: 0.4rem;
+    transform: translate(-50%, -50%);
+    color: black;
+    min-height: 4rem;
+    padding: 1rem
+}
+
+.btn-slet-produkt{
+    background-color: #DC9924;
+    color: var(--creme);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.type-navn{
+    margin-top: 1rem;
+    font-family: roboto;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.fourth{
+    background-color: var(--creme);
+    width: 30rem; /* Gør den bredere, så der er plads */
+    position: absolute;
+    font-family: sansita, roboto;
+    top: 116%;
+    left: 26%;
+    border-radius: 0.4rem;
+    transform: translate(-50%, -50%);
+    color: black;
+    min-height: 4rem;
+    padding: 1rem
+}
+
+.btn-slet-produkt{
+    background-color: #DC9924;
+    color: var(--creme);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.type-navn{
+    margin-top: 1rem;
+    font-family: roboto;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.fith{
+    background-color: var(--creme);
+    width: 30rem; /* Gør den bredere, så der er plads */
+    position: absolute;
+    font-family: sansita, roboto;
+    top: 143%;
+    left: 26%;
+    border-radius: 0.4rem;
+    transform: translate(-50%, -50%);
+    color: black;
+    min-height: 4rem;
+    padding: 1rem
+}
+
+.btn-slet-produkt{
+    background-color: #DC9924;
+    color: var(--creme);
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.type-navn{
+    margin-top: 1rem;
+    font-family: roboto;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+/*_____________________________________________*/
+
+/* Footer */
+footer{
+    background-color: #301706;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 8rem;
+}
+
+footer h4{
+    font-size: 1rem;
+    text-decoration: none;
+    top: 18%;
+    left: 13rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+footer img{
+    width: 8rem;
+    position: absolute;
+    top: 18%;
+    left: 2.3rem;
+}
+/*_____________________________________________*/
