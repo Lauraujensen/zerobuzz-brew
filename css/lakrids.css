@@ -289,3 +289,12 @@ h2:hover{
     font-weight: bold;
     cursor: pointer;
 }
+input{
+    background-color: transparent; /* Fjerner baggrundsfarve */
+    border: none; /* Fjerner kant (hvis ønsket) */
+    width: auto; /* Automatisk bredde baseret på indhold */
+    padding: 0; /* Fjerner indre afstand */
+    outline: none; /* Fjerner fokus-ramme */
+      
+     
+}
