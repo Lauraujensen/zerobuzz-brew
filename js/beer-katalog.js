@@ -69,7 +69,100 @@ function visClKnapper() {
             }
     }
 
+    window.shopAddOneToCart = function (produkt) {
+        let shopadd = cart.find(bajer => bajer.type === produkt);
+        
+        if (shopadd) {
+            shopadd.quantity++; // Rettelse: Brug objektet, ikke strengen
+            shopUpdateTotalPrice(shopadd);
+            saveCartToLocalStorage();
+            
+        }
+        console.log("tilføjet 1");
+        console.log(produkt);
+        console.log(shopadd);
+     };
+     
+     // Fjerner et produkt fra kurven
+     window.shopRemoveOneFromCart = function (produkt) {
+        let shopedact = cart.find(bajer => bajer.type === produkt);
+        
+        if (shopedact && shopedact.quantity > 0) {
+            shopedact.quantity--; // Rettelse: Brug objektet
+            shopUpdateTotalPrice(shopedact);
+            saveCartToLocalStorage();        
+        }
+        console.log("fjernet 1");
+     };
 
+     window.shopAddSixToCart = function (produkt) {
+        let shopadd = cart.find(bajer => bajer.type === produkt);
+        
+        if (shopadd) {
+            shopadd.quantity++; // Rettelse: Brug objektet, ikke strengen
+            shopUpdateTotalPrice(shopadd);
+            saveCartToLocalStorage();
+            
+        }
+        console.log("tilføjet 1 sixpack fra shoppen");
+        console.log(produkt);
+        console.log(shopadd);
+     };
+     
+     // Fjerner et produkt fra kurven
+     window.shopRemoveSixFromCart = function (produkt) {
+        let shopedact = cart.find(bajer => bajer.type === produkt);
+        
+        if (shopedact && shopedact.quantity > 0) {
+            shopedact.quantity--; // Rettelse: Brug objektet
+            shopUpdateTotalPrice(shopedact);
+            saveCartToLocalStorage();        
+        }
+        console.log("fjernet 1 sixpack fra shoppen");
+     };
+
+     window.shopAddTFToCart = function (produkt) {
+        let shopadd = cart.find(bajer => bajer.type === produkt);
+        
+        if (shopadd) {
+            shopadd.quantity++; // Rettelse: Brug objektet, ikke strengen
+            shopUpdateTotalPrice(shopadd);
+            saveCartToLocalStorage();
+            
+        }
+        console.log("tilføjet 1 ramme fra shoppen");
+        console.log(produkt);
+        console.log(shopadd);
+     };
+     
+     // Fjerner et produkt fra kurven
+     window.shopRemoveTFFromCart = function (produkt) {
+        let shopedact = cart.find(bajer => bajer.type === produkt);
+        
+        if (shopedact && shopedact.quantity > 0) {
+            shopedact.quantity--; // Rettelse: Brug objektet
+            shopUpdateTotalPrice(shopedact);
+            saveCartToLocalStorage();        
+        }
+        console.log("fjernet 1 ramme fra shoppen");
+     };
+
+     function shopUpdateTotalPrice(produkt) {
+        let splreset = cart.find(bajer => bajer.type === produkt);
+    
+        if(produkt){
+            produkt.total = produkt.quantity * produkt.price;
+            
+            document.getElementById(produkt.type).value = produkt.quantity;
+            document.getElementById(produkt.type + "-total").value = produkt.total;
+    
+    
+            //slettet alle kaldte funktioner, da de ikke eksistere på katalog-html-siden
+        
+        console.log("update total price");
+    }
+        
+    }
 
 
 

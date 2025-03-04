@@ -407,7 +407,7 @@ footer article p:hover {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 26%;
+    width: 33%;
     
     margin-bottom: 8rem;
     margin-top: -6rem;
@@ -441,17 +441,35 @@ footer article p:hover {
     color: white;
     border: none;
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     border-radius: 0.3rem;
 }
 
-/* Stil for tallet, der viser hvor mange enheder der er valgt */
+
+
+.quantity-controls .form-control{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--creme);
+    width: 2rem;
+    text-align: end;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    
+}
+
+.quantity-controls .enkelt-produkt-pris{
+    display: none;
+}
+
+/* Stil for tallet, der viser hvor mange enheder der er valgt
 .quantity-controls span {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--dark-brown);
-}
+} */
 
 /* Sørger for, at billederne ikke forvrænges */
 .quantity-item img {

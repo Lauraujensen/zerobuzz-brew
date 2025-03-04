@@ -45,23 +45,24 @@
                 <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
                 <p>1 stk.</p>
                 <div class="quantity-controls">
-                     <button class="btn-plus-enkelt" onclick="addOneToCart('classic');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                <button class="btn-minus-enkelt" onclick="removeOneFromCart('classic');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
-                <input type="number" name="classic" id="classic" value="0"  class="form-control" disabled>
+                     <button class="btn-plus-enkelt" onclick="shopAddOneToCart('classic');">+</button>
+                     <input type="number" name="classic" id="classic" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveOneFromCart('classic');">-</button>
+                
                 <input type="number" id="classic-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
                 </div>
             </div>
-            <section class="totalpris">
-                <input type="number" name="totalSum" id="totalSum" value="0" class="form-control" disabled> <!--den absolute total pris-felt-->
+           
             <!-- 6-pack -->
             <div class="quantity-item">
                 <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
                 <p>6 stk.</p>
                 <div class="quantity-controls">
-                    <button class="btn-plus-seks" onclick="addSixToCart('classic-sixpack');">+</button>
-                    <input type="number" name="classic-sixpack" id="shop-classic-sixpack" value="0"  class="form-control" disabled>
-                    <button class="btn-minus-seks" onclick="removeSixFromCart('classic-sixpack');">-</button>
-                    
+                    <button class="btn-plus-enkelt" onclick="shopAddSixToCart('classic-sixpack');">+</button>
+                    <input type="number" name="classic" id="classic-sixpack" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveSixFromCart('classic-sixpack');">-</button>
+                
+                <input type="number" id="classic-sixpack-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
                 </div>
             </div>
             <!-- 24-pack -->
@@ -69,10 +70,11 @@
                 <img src="./img/24pack.png" alt="24-pack" class="pack24-icon">
                 <p>24 stk.</p>
                 <div class="quantity-controls">
-                    <button class="btn-plus-ft" onclick="addTFToCart('classic-ramme');"><img src="img/plus.svg" alt="Plustegn" class="plusikon"></button>
-                    <input type="number" name="classic-ramme" id="classic-ramme" value="0"  class="form-control" disabled>
-                    <button class="btn-minus-ft" onclick="removeTFFromCart('classic-ramme');"><img src="img/minus.svg" alt="Minustegn" class="minusikon"></button>
-                    
+                    <button class="btn-plus-enkelt" onclick="shopAddTFToCart('classic-ramme');">+</button>
+                    <input type="number" name="classic" id="classic-ramme" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveTFFromCart('classic-ramme');">-</button>
+               
+                <input type="number" id="classic-ramme-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
                 </div>
             </div>
         </article>
