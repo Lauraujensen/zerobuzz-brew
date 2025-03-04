@@ -42,6 +42,9 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     padding-top: 1rem; /* Skubber alt indhold ned, så det ikke ligger bag navbaren */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
