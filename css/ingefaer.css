@@ -63,7 +63,7 @@ body {
     display: flex;
     justify-content: flex-start; /* Sørger for at logo + menu starter fra venstre */
     align-items: center;
-    background-color:#41220c5e; ;
+    background-color:#3119089c; ;
     padding: 0.8rem 1rem; /* Gør navbaren smallere i højden */
     height: 4.8rem; /* Sæt en fast højde, hvis nødvendigt */
     position: fixed;
