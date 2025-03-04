@@ -43,6 +43,8 @@ body {
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat;
     min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
+    display: flex;
+    flex-direction: column;
   }
 
 h2{
@@ -150,7 +152,7 @@ h2:hover{
     max-width: 90%;
     padding-left: 15rem;
     padding-top: 5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 
 /* Stil for øl-dåsen */
