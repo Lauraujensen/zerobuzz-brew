@@ -183,6 +183,13 @@ h2{
     mask-image: linear-gradient(to bottom, transparent, rgb(0, 0, 0) 4%, white 95%, transparent);
 }
 
+main img{
+    position: absolute;
+    z-index: 5;
+    top: 118%;
+    left: 5%;
+}
+
 
 
 
