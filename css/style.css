@@ -151,7 +151,7 @@ h2{
 
 .startimg {
     width: 100%;
-    margin-top: -20rem;
+    margin-top: -5rem;
 
 }
 
@@ -196,7 +196,7 @@ main img{
 
 /* Footer */
 footer{
-    background-color: var(--curry);
+    background-color: #192809;
     position: relative;
     width: 100%;
     height: 8rem;
