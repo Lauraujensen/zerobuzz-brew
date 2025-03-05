@@ -347,7 +347,7 @@ h4.classic-pris {
     cursor: pointer;
     position: relative;
     margin: 3rem auto; /* Brug rem for margin */
-    margin-top: 12rem;
+    margin-top: 15rem;
 }
 
 .can img {
@@ -363,7 +363,6 @@ h4.classic-pris {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent baggrund */
     display: flex;
     justify-content: center;
     align-items: center;
