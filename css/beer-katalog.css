@@ -47,6 +47,7 @@ body {
     background-image: url(../img/beer-katalog-background.png);
     background-size: cover; /* Sørger for, at billedet dækker hele skærmen */
     background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat;
     min-height: 100vh; /* Sikrer, at baggrunden fylder mindst skærmen, men tillader scrolling */
     display: flex;
     flex-direction: column;
