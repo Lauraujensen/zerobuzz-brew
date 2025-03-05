@@ -166,4 +166,24 @@ function visClKnapper() {
 
 
 
+
+
+    // Hent dåse elementet og infographic containeren
+const can = document.getElementById("can");
+const info = document.getElementById("info");
+
+// Når dåsen trykkes på, vis eller skjul infographic
+can.addEventListener("click", () => {
+    if (info.classList.contains("hidden")) {
+        info.classList.remove("hidden");
+    } else {
+        info.classList.add("hidden");
+    }
+});
+// Når infographic trykkes på, skjul den
+info.addEventListener("click", () => {
+    info.classList.add("hidden");
+});
+
+
     
