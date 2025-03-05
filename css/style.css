@@ -201,6 +201,7 @@ main .box-01{
     padding: 5rem 3rem;
     border-radius: 2rem;
     text-align: center;
+    box-shadow: #271a0231 14px 16px 2px;
 }
 
 main .box-01 img{
@@ -221,9 +222,58 @@ main .box-text-01{
     line-height: 1.9rem;
 }
 
+main .box-02{
+    background-color: #FEF1D7;
+    width: 80rem;
+    height: 28rem;
+    position: absolute;
+    top: 260%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--dark-brown);
+    padding: 5rem 3rem;
+    border-radius: 2rem;
+    padding-right: 40rem;
+    text-align: center;
+    box-shadow: #dc992431 14px 16px 2px;
+}
 
+main .box-overskrift-02{
+    font-family: sansita;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
 
+main .box-text-02{
+    font-family: roboto;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
 
+main .all-cans{
+    top: 0;
+    left: 53%;
+}
+
+main .order-here{
+    background-color: var(--curry);
+    color: var(--creme);
+    font-family: roboto;
+    width: 8rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.8rem;
+    left: 22%;
+    top: 80%;
+    position: absolute;
+    transition: ease 0.3s;
+}
+
+main .order-here:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
 
 
