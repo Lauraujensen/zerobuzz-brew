@@ -98,31 +98,36 @@
             <!-- Enkelt dåse -->
                 <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
                 <p>1 stk.</p>
-                <div class="quantity-controls">
-                    <button onclick="adjustQuantity(this, -1)">-</button>
-                    <span class="quantity">1</span>
-                    <button onclick="adjustQuantity(this, 1)">+</button>
-                </div>
+                <div class="quantity-controls">                    
+                    <button class="btn-plus-enkelt" onclick="shopAddOneToCart('lakrids');">+</button>
+                    <input type="number" name="lakrids" id="lakrids" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveOneFromCart('lakrids');">-</button>
+               
+                <input type="number" id="lakrids-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+            </div>
             </div>
             <!-- 6-pack -->
             <div class="quantity-item">
                 <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
                 <p>6 stk.</p>
-                <div class="quantity-controls">
-                    <button onclick="adjustQuantity(this, -1)">-</button>
-                    <span class="quantity">1</span>
-                    <button onclick="adjustQuantity(this, 1)">+</button>
-                </div>
+                <div class="quantity-controls">                    
+                    <button class="btn-plus-enkelt" onclick="shopAddSixToCart('lakrids-sixpack');">+</button>
+                    <input type="number" name="lakrids" id="lakrids-sixpack" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveSixFromCart('lakrids-sixpack');">-</button>
+               
+                <input type="number" id="lakrids-sixpack-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+            </div>
             </div>
             <!-- 24-pack -->
             <div class="quantity-item">
                 <img src="./img/24pack.png" alt="24-pack" class="pack24-icon">
                 <p>24 stk.</p>
-                <div class="quantity-controls">
-                    <button onclick="adjustQuantity(this, -1)">-</button>
-                    <span class="quantity">1</span>
-                    <button onclick="adjustQuantity(this, 1)">+</button>
-                </div>
+                <div class="quantity-controls">                    
+                    <button class="btn-plus-enkelt" onclick="shopAddTFToCart('lakrids-ramme');">+</button>
+                    <input type="number" name="lakrids" id="lakrids-ramme" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveTFFromCart('lakrids-ramme');">-</button>
+               
+                <input type="number" id="lakrids-ramme-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
             </div>
         </article>
 
@@ -133,6 +138,46 @@
             <h4>16 kr.</h4>
             <button class="mulighedsknapper" onclick="visInKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="ingefaer-pil"></button>
         </section>
+
+        <article class="quantity-box" id="ingefaer-knapper">
+            <div class="quantity-item">
+            <!-- Enkelt dåse -->
+                <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
+                <p>1 stk.</p>
+                <div class="quantity-controls">
+                     <button class="btn-plus-enkelt" onclick="shopAddOneToCart('ingefaer');">+</button>
+                     <input type="number" name="ingefaer" id="ingefaer" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveOneFromCart('ingefaer');">-</button>
+                
+                <input type="number" id="ingefaer-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                </div>
+            </div>
+           
+            <!-- 6-pack -->
+            <div class="quantity-item">
+                <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
+                <p>6 stk.</p>
+                <div class="quantity-controls">
+                    <button class="btn-plus-enkelt" onclick="shopAddSixToCart('ingefaer-sixpack');">+</button>
+                    <input type="number" name="ingefaer" id="ingefaer-sixpack" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveSixFromCart('ingefaer-sixpack');">-</button>
+                
+                <input type="number" id="ingefaer-sixpack-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                </div>
+            </div>
+            <!-- 24-pack -->
+            <div class="quantity-item">
+                <img src="./img/24pack.png" alt="24-pack" class="pack24-icon">
+                <p>24 stk.</p>
+                <div class="quantity-controls">
+                    <button class="btn-plus-enkelt" onclick="shopAddTFToCart('ingefaer-ramme');">+</button>
+                    <input type="number" name="ingefaer" id="ingefaer-ramme" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveTFFromCart('ingefaer-ramme');">-</button>
+               
+                <input type="number" id="ingefaer-ramme-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                </div>
+            </div>
+        </article>
         
         <section class="special-beer">
             <a href="citron-aboutpage.html"><h2 class="can-names" id="citron-h2">Citron</h2></a>
@@ -141,6 +186,46 @@
             <h4>16 kr.</h4>
             <button class="mulighedsknapper" onclick="visCiKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="citron-pil"></button>
         </section>
+
+        <article class="quantity-box" id="citron-knapper">
+            <div class="quantity-item">
+            <!-- Enkelt dåse -->
+                <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
+                <p>1 stk.</p>
+                <div class="quantity-controls">
+                     <button class="btn-plus-enkelt" onclick="shopAddOneToCart('citron');">+</button>
+                     <input type="number" name="citron" id="citron" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveOneFromCart('citron');">-</button>
+                
+                <input type="number" id="citron-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                </div>
+            </div>
+           
+            <!-- 6-pack -->
+            <div class="quantity-item">
+                <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
+                <p>6 stk.</p>
+                <div class="quantity-controls">
+                    <button class="btn-plus-enkelt" onclick="shopAddSixToCart('citron-sixpack');">+</button>
+                    <input type="number" name="citron" id="citron-sixpack" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveSixFromCart('citron-sixpack');">-</button>
+                
+                <input type="number" id="citron-sixpack-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                </div>
+            </div>
+            <!-- 24-pack -->
+            <div class="quantity-item">
+                <img src="./img/24pack.png" alt="24-pack" class="pack24-icon">
+                <p>24 stk.</p>
+                <div class="quantity-controls">
+                    <button class="btn-plus-enkelt" onclick="shopAddTFToCart('citron-ramme');">+</button>
+                    <input type="number" name="citron" id="citron-ramme" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveTFFromCart('citron-ramme');">-</button>
+               
+                <input type="number" id="citron-ramme-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                </div>
+            </div>
+        </article>
     </section>
 
 
@@ -153,6 +238,46 @@
             <h4>16 kr.</h4>
             <button class="mulighedsknapper" onclick="visHylKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="hyldeblomst-pil"></button>
         </section>
+
+        <article class="quantity-box" id="hyldeblomst-knapper">
+            <div class="quantity-item">
+            <!-- Enkelt dåse -->
+                <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
+                <p>1 stk.</p>
+                <div class="quantity-controls">
+                     <button class="btn-plus-enkelt" onclick="shopAddOneToCart('hyldeblomst');">+</button>
+                     <input type="number" name="hyldeblomst" id="hyldeblomst" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveOneFromCart('hyldeblomst');">-</button>
+                
+                <input type="number" id="hyldeblomst-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                </div>
+            </div>
+           
+            <!-- 6-pack -->
+            <div class="quantity-item">
+                <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
+                <p>6 stk.</p>
+                <div class="quantity-controls">
+                    <button class="btn-plus-enkelt" onclick="shopAddSixToCart('hyldeblomst-sixpack');">+</button>
+                    <input type="number" name="hyldeblomst" id="hyldeblomst-sixpack" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveSixFromCart('hyldeblomst-sixpack');">-</button>
+                
+                <input type="number" id="hyldeblomst-sixpack-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                </div>
+            </div>
+            <!-- 24-pack -->
+            <div class="quantity-item">
+                <img src="./img/24pack.png" alt="24-pack" class="pack24-icon">
+                <p>24 stk.</p>
+                <div class="quantity-controls">
+                    <button class="btn-plus-enkelt" onclick="shopAddTFToCart('hyldeblomst-ramme');">+</button>
+                    <input type="number" name="hyldeblomst" id="hyldeblomst-ramme" value="0"  class="form-control" disabled>
+                <button class="btn-minus-enkelt" onclick="shopRemoveTFFromCart('hyldeblomst-ramme');">-</button>
+               
+                <input type="number" id="hyldeblomst-ramme-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                </div>
+            </div>
+        </article>
         
         <section class="special-beer">
             <h2 class="mystery-h2" id="mystery-description-01">Kommer snart</h2>
