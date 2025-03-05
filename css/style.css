@@ -260,6 +260,7 @@ main .order-here{
     background-color: var(--curry);
     color: var(--creme);
     font-family: roboto;
+    font-weight: 600;
     width: 8rem;
     padding: 1rem;
     font-size: 1.2rem;
@@ -275,6 +276,60 @@ main .order-here:hover{
     cursor: pointer;
 }
 
+.three-boxes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    width: 75rem;
+    height: 25rem;
+    position: absolute;
+    top: 370%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    background-color: #5B3F24;
+    color: var(--creme);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 14px 16px 2px rgba(0, 0, 0, 0.227);
+}
+
+.box-overskrift{
+    font-family: sansita;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+.box-text{
+    font-family: roboto;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.read-more{
+    background-color: var(--curry);
+    color: var(--creme);
+    width: 8rem;
+    padding: 1rem;
+    font-family: roboto;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    position: absolute;
+    top: 92%;
+    margin-left: 5.5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: ease 0.3s;
+}
+
+.read-more:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
 
 
