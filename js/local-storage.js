@@ -63,5 +63,6 @@ function updateUIFromCart() {
 window.onload = function () {
     loadCartFromLocalStorage();
     visFirst();
+    skjulKlasseArtikler();
     visProdukt();
 };

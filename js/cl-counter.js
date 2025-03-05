@@ -175,6 +175,7 @@ function removeEntireClassic() {
     updateUIFromCart();
     saveCartToLocalStorage();
     visFirst();
+    skjulKlasseArtikler();
 }
 
 
