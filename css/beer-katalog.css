@@ -287,9 +287,11 @@ h4 {
     text-decoration: underline;
 }
 
+/*
 h4.classic-pris {
-    /* margin: 0rem 0rem 5rem 0rem; */
+    margin: 0rem 0rem 5rem 0rem;
 }
+*/
 
 .special-beer-container-02 {
     display: grid;

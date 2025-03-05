@@ -174,7 +174,10 @@ function removeEntireClassic() {
     console.log("du trykkede på slet alt 'classic'-knappen");  
     updateUIFromCart();
     saveCartToLocalStorage();
+    visFirst();
 }
+
+
 
 function removeEntireLakrids() {
     cart.forEach(bajer => {
