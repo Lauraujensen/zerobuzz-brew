@@ -39,9 +39,9 @@
 body {
     background-image: url(../img/check-out-background.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    padding-top: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,6 +145,7 @@ main {
     display: flex;
     align-items: flex-start;
     margin-bottom: 8rem;
+    margin-top: 8rem;
 }
 
 .overskrifter {
