@@ -62,4 +62,6 @@ function updateUIFromCart() {
 // Loader data fra localStorage ved opstart
 window.onload = function () {
     loadCartFromLocalStorage();
+    visFirst();
+    visProdukt();
 };
