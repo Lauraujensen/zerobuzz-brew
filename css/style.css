@@ -37,7 +37,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: var(--darker-green);
 }
 
 
@@ -301,11 +301,12 @@ main .order-here:hover{
     font-family: sansita;
     font-size: 1.8rem;
     margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 .box-text{
     font-family: roboto;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     font-weight: 300;
 }
@@ -330,7 +331,6 @@ main .order-here:hover{
     transform: scale(1.05);
     cursor: pointer;
 }
-
 
 
 /* Footer */
