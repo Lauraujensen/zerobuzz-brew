@@ -173,7 +173,7 @@ main {
 
 .can {
     margin: 1rem 1rem 0rem 0rem;
-    
+    display: none;
 }
 
 .btn-slet-produkt{
@@ -263,7 +263,7 @@ main {
     font-weight: 300;
 }
 
-.fith{
+.fifth{
     background-color: var(--creme);
     width: 30rem; /* Gør den bredere, så der er plads */
     font-family: sansita, roboto;

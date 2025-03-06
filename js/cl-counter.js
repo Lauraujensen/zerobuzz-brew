@@ -8,6 +8,8 @@ function addOneToCart(produkt) {
         updateTotalPrice(spladd);
         saveCartToLocalStorage();
     }
+    //console.logs er bare for at tjekke om vi når til dette sted i scriptet,
+    // og om de har en værdi eller om de er "undefined"
     console.log("tilføjet 1");
     console.log(produkt);
     console.log(spladd);
@@ -77,7 +79,7 @@ function removeTFFromCart(produkt) {
     console.log("fjernet 1 ramme");
 }
 
-// Nulstiller et enkelt produkt i kurven
+// Nulstiller hele kurven
 function resetCart(produkt) {
     let splreset = cart.find(bajer => bajer.type === produkt);
 
@@ -112,33 +114,35 @@ function updateTotalPrice(produkt) {
     
 }
 
-
+//den samlede pris for alle classic-produkter
  function samletClassicPrice() {
      const classicProdukter = cart.filter(produkt =>produkt.type.includes("classic"));
      const classicSum = classicProdukter.reduce((sum, ele) => sum + ele.total, 0);
      document.getElementById("classicSum").value = classicSum;
 }
-//  const lakridsProdukter = cart.filter(produkt => produkt.type.includes("lakrids"));
 
-//  function samletLakridsPrice() {
-//      const lakridsSum = lakridsProdukter.reduce((sum, ele) => sum + ele.total, 0);
-//      document.getElementById("lakridsSum").value = lakridsSum;
-// }
+//den samlede pris for alle lakrids-produkter
 function samletLakridsPrice() {
     const lakridsProdukter = cart.filter(produkt => produkt.type.includes("lakrids")); 
     const lakridsSum = lakridsProdukter.reduce((sum, ele) => sum + ele.total, 0);
     document.getElementById("lakridsSum").value = lakridsSum;
 }
+
+//den samlede pris for alle ingefaer-produkter
 function samletIngefaerPrice() {
     const ingefaerProdukter = cart.filter(produkt => produkt.type.includes("ingefaer")); 
     const ingefaerSum = ingefaerProdukter.reduce((sum, ele) => sum + ele.total, 0);
     document.getElementById("ingefaerSum").value = ingefaerSum;
 }
+
+//den samlede pris for alle citron-produkter
 function samletCitronPrice() {
     const citronProdukter = cart.filter(produkt => produkt.type.includes("citron")); 
     const citronSum = citronProdukter.reduce((sum, ele) => sum + ele.total, 0);
     document.getElementById("citronSum").value = citronSum;
 }
+
+//den samlede pris for alle hyldeblomst-produkter
 function samletHyldeblomstPrice() {
     const hyldeblomstProdukter = cart.filter(produkt => produkt.type.includes("hyldeblomst")); 
     const hyldeblomstSum = hyldeblomstProdukter.reduce((sum, ele) => sum + ele.total, 0);
@@ -175,7 +179,7 @@ function removeEntireClassic() {
     updateUIFromCart();
     saveCartToLocalStorage();
     visFirst();
-    skjulKlasseArtikler();
+    
 }
 
 

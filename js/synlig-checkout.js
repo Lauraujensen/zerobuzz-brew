@@ -1,35 +1,100 @@
 "use strict";
-// function visFirst() {document.querySelectorAll("input[type='number']");
-//     let sumtal = 
-//     //Number(document.getElementById("classicSum").value);
-//     let produktKasse = document.getElementById("first")
+//Et forsøg på at få alle funktionerne fra visFirst til visFifth i én generalisernede funktion 
+// function visFirst() {
+//     let smagCon = document.querySelectorAll("article.can"); // Finder alle article-elementer med class "can"
+    
+//     smagCon.forEach(article => {
+//         let sumtal = Number(article.getAttribute("data-value")); // Henter værdien fra et data-attribut
+
+//         // Kontroller om sumtal ikke er 0 og er et gyldigt tal
+//         if (!isNaN(sumtal) && sumtal !== 0) {
+//             article.style.display = "block"; // Hvis ikke 0, vis artiklen
+//         } else {
+//             article.style.display = "none"; // Hvis 0, skjul artiklen
+//         }
+//     });
+//}
+
+ function visFirst() {document.querySelectorAll("input[type='number']");
+     let sumtal = Number(document.getElementById("classicSum").value);
+     let produktKasse = document.getElementById("first")
     
 
-//     if (sumtal !== 0) {
-//         produktKasse.style.display = "block"; // Gør teksten synlig
+     if (sumtal !== 0) {
+         produktKasse.style.display = "block"; // Gør teksten synlig
         
-//         }
-//     else {
-//         produktKasse.style.display = "none"; // Skjuler teksten igen
+         }
+     else {
+         produktKasse.style.display = "none"; // Skjuler teksten igen
         
-//         }
+         }
             
-//     }
+     }
 
-function visFirst() {
-    let smagCon = document.querySelectorAll("article.can"); // Finder alle article-elementer med class "can"
+    function visSecond() {document.querySelectorAll("input[type='number']");
+    let sumtal = Number(document.getElementById("lakridsSum").value);
+    let produktKasse = document.getElementById("second")
     
-    smagCon.forEach(article => {
-        let sumtal = Number(article.getAttribute("data-value")); // Henter værdien fra et data-attribut
 
-        // Kontroller om sumtal ikke er 0 og er et gyldigt tal
-        if (!isNaN(sumtal) && sumtal !== 0) {
-            article.style.display = "block"; // Hvis ikke 0, vis artiklen
-        } else {
-            article.style.display = "none"; // Hvis 0, skjul artiklen
+    if (sumtal !== 0) {
+        produktKasse.style.display = "block"; // Gør teksten synlig
+        
         }
-    });
-}
+    else {
+        produktKasse.style.display = "none"; // Skjuler teksten igen
+        
+        }
+            
+    }
+
+    function visThird() {document.querySelectorAll("input[type='number']");
+        let sumtal = Number(document.getElementById("ingefaerSum").value);
+        let produktKasse = document.getElementById("third")
+        
+
+        if (sumtal !== 0) {
+            produktKasse.style.display = "block"; // Gør teksten synlig
+            
+            }
+        else {
+            produktKasse.style.display = "none"; // Skjuler teksten igen
+            
+            }
+                
+        }
+
+    function visFourth() {document.querySelectorAll("input[type='number']");
+        let sumtal = Number(document.getElementById("citronSum").value);
+        let produktKasse = document.getElementById("fourth")
+        
+    
+        if (sumtal !== 0) {
+            produktKasse.style.display = "block"; // Gør teksten synlig
+            
+            }
+        else {
+            produktKasse.style.display = "none"; // Skjuler teksten igen
+            
+            }
+                
+        }
+
+    function visFifth() {document.querySelectorAll("input[type='number']");
+        let sumtal = Number(document.getElementById("hyldeblomstSum").value);
+        let produktKasse = document.getElementById("fifth")
+        
+    
+        if (sumtal !== 0) {
+            produktKasse.style.display = "block"; // Gør teksten synlig
+            
+            }
+        else {
+            produktKasse.style.display = "none"; // Skjuler teksten igen
+            
+            }
+                
+        }
+
     function visProdukt() {
         let inputs = document.querySelectorAll("input[type='number']");
         
@@ -80,7 +145,7 @@ function visFirst() {
                 bajer.total = 0;
             }
         });    
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'classic-sixpack'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
         visFirst();
@@ -94,7 +159,7 @@ function visFirst() {
                 bajer.total = 0;
             }
         });  
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'classic-ramme'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
         visFirst();
@@ -111,7 +176,7 @@ function visFirst() {
         console.log("du trykkede på slet lakrids-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visSecond();
         visProdukt();
     }
     
@@ -125,7 +190,7 @@ function visFirst() {
         console.log("du trykkede på slet alt 'lakrids-sixpack'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visSecond();
         visProdukt();
     }
     
@@ -136,10 +201,10 @@ function visFirst() {
                 bajer.total = 0;
             }
         });  
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'lakrids-ramme'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visSecond();
         visProdukt();
     }
 
@@ -150,10 +215,10 @@ function visFirst() {
                 bajer.total = 0;
             }
         });    
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'ingefaer'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visThird();
         visProdukt();
     }
     
@@ -164,10 +229,10 @@ function visFirst() {
                 bajer.total = 0;
             }
         });    
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'ingefaer-sixpack'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visThird();
         visProdukt();
     }
     
@@ -178,10 +243,10 @@ function visFirst() {
                 bajer.total = 0;
             }
         });  
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'ingefaer-ramme'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visThird();
         visProdukt();
     }
 
@@ -192,10 +257,10 @@ function visFirst() {
                 bajer.total = 0;
             }
         });    
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'citron'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visFourth();
         visProdukt();
     }
     
@@ -206,10 +271,10 @@ function visFirst() {
                 bajer.total = 0;
             }
         });    
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'citron-sixpack'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visFourth();
         visProdukt();
     }
     
@@ -220,10 +285,10 @@ function visFirst() {
                 bajer.total = 0;
             }
         });  
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'citron-ramme'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visFourth();
         visProdukt();
     }
 
@@ -234,10 +299,10 @@ function visFirst() {
                 bajer.total = 0;
             }
         });    
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'hyldeblomst'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visFifth();
         visProdukt();
     }
     
@@ -248,10 +313,10 @@ function visFirst() {
                 bajer.total = 0;
             }
         });    
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'hyldeblomst-sixpack'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visFifth();
         visProdukt();
     }
     
@@ -262,10 +327,10 @@ function visFirst() {
                 bajer.total = 0;
             }
         });  
-        console.log("du trykkede på slet alt 'classic'-knappen");  
+        console.log("du trykkede på slet alt 'hyldeblomst-ramme'-knappen");  
         updateUIFromCart();
         saveCartToLocalStorage();
-        visFirst();
+        visFifth();
         visProdukt();
     }
 
