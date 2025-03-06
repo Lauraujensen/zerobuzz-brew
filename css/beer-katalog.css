@@ -141,11 +141,11 @@ a {
     position: relative;
     background-color: rgb(115, 136, 90);
     width: 84rem;
-    height: 6rem;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 }
 
 .info-container {
@@ -157,7 +157,6 @@ a {
     border-bottom-left-radius: 4rem;
     display: flex;
     align-items: center;
-    margin-bottom: 8rem;
     flex-direction: column;
     justify-content: flex-end;
 }
@@ -210,6 +209,11 @@ h2:hover{
     font-weight: 400;
 }
 
+.beer-box {
+    display: flex;
+    flex-direction: column;
+}
+
 .special-beer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -229,6 +233,10 @@ h2:hover{
     align-items: center;
     flex-direction: column;
     padding-top: 1rem;
+}
+
+.comming-soon {
+    height: 47.5rem;
 }
 
 .can-names{
@@ -457,10 +465,8 @@ footer article p:hover {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    width: 33%;
-    
-    margin-bottom: 8rem;
-    margin-top: -6rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
 }
 
 /* idividuelle Quantity Items */
