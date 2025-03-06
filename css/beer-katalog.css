@@ -467,6 +467,8 @@ footer article p:hover {
     gap: 1rem;
     margin-top: 3rem;
     margin-bottom: 4rem;
+    color: var(--creme);
+    font-family: roboto;
 }
 
 /* idividuelle Quantity Items */
