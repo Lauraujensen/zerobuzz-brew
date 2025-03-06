@@ -108,13 +108,15 @@
             if (!input.id.includes("total")) { // Undgå "totalSum"
                 let tilknyttetKasse = document.getElementById(input.id + "-kas"); // Antag at kassen har samme ID med "kas" tilføjet
     
-                if (tilknyttetKasse) { // Sikrer at der findes en kasse til feltet
-                    tilknyttetKasse.style.display = (Number(input.value) !== 0) ? "block" : "none";
-                }
+                 if (tilknyttetKasse) { // Sikrer at der findes en kasse til feltet
+                     tilknyttetKasse.style.display = (Number(input.value) !== 0) ? "block" : "none";
+                 }
+                
             }
         });
                 
     }
+    
 
     document.querySelectorAll("input[type='number']").forEach(input => {
         input.addEventListener("input", visProdukt);

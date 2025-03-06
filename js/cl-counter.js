@@ -167,6 +167,7 @@ function resetEntireCart() {
     saveCartToLocalStorage();
 }
 
+//Nulstiller alle classic-produkter
 function removeEntireClassic() {
     cart.forEach(bajer => {
         if (bajer.type.includes("classic")) {
@@ -183,7 +184,7 @@ function removeEntireClassic() {
 }
 
 
-
+//Nulstiller alle lakrids-produkter
 function removeEntireLakrids() {
     cart.forEach(bajer => {
         if (bajer.type.includes("lakrids")) {
@@ -197,6 +198,8 @@ function removeEntireLakrids() {
     saveCartToLocalStorage();
 }
 
+
+//Nulstiller alle ingefær-produkter
 function removeEntireIngefaer() {
     cart.forEach(bajer => {
         if (bajer.type.includes("ingefaer")) {
@@ -210,6 +213,8 @@ function removeEntireIngefaer() {
     saveCartToLocalStorage();
 }
 
+
+//Nulstiller alle citron-produkter
 function removeEntireCitron() {
     cart.forEach(bajer => {
         if (bajer.type.includes("citron")) {
@@ -223,6 +228,8 @@ function removeEntireCitron() {
     saveCartToLocalStorage();
 }
 
+
+//Nulstiller alle hyldeblomst-produkter
 function removeEntireHyldeblomst() {
     cart.forEach(bajer => {
         if (bajer.type.includes("hyldeblomst")) {

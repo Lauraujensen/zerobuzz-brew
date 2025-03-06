@@ -46,7 +46,8 @@ function updateUIFromCart() {
             prisIndi.value = bajer.total; // Rettelse: Bruger bajer.total
         }
     });
-    //Disse er til for at at "samlet/total...Price()" er opdateret når man går væk fra checkout siden og siden hen kommer tilbage igen
+    //Disse er til for at at input-felterne "total/samlet...Price()" er opdateret,
+    //når man går væk fra checkout siden og siden hen kommer tilbage igen
     samletHyldeblomstPrice();
     samletCitronPrice();
     samletIngefaerPrice();
