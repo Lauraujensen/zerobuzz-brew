@@ -161,13 +161,7 @@ a {
     justify-content: flex-end;
 }
 
-.info-container #infographic {
-    max-height: 100%; /* Sørger for, at billedet ikke bliver højere end containeren */
-    width: 80rem;
-    position: absolute;
-    left: -114%;
-    top: 5rem;
-}
+ 
 
 h1{
     font-family: sansita;

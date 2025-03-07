@@ -125,8 +125,7 @@ body {
 
 button{
     border: none;
-    padding: none;
-    margin: none;
+   
 }
 button:hover{
     cursor: pointer;

@@ -31,7 +31,7 @@
 
     <div class="beer-box">
         <section id="top" class="info-container">
-            <img class="hidden" src="" alt="" id="infographic">
+            
             <a href="classic-aboutpage.html"><h1>Classic</h1></a>
 
                 <!-- Main content in a section -->
@@ -50,7 +50,7 @@
             <a href="classic-aboutpage.html"><h3 class="special-description">Klassisk Buzz Brew 0,0%</h3></a>
             <h4 class="classic-pris">16 kr.</h4>
 
-            <button class="mulighedsknapper" onclick="visClKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="classic-pil"></button>
+            <button class="mulighedsknapper" onclick="visClKnapper()"><img src="img/arrowhead-up.svg" alt="pilehoved" id="classic-pil"></button>
         </section>
         
         <article class="quantity-box" id="classic-knapper">
@@ -101,17 +101,17 @@
     <main>
     <section id="midt" class="special-beer-container">
 
-        <div class="beer-box">
+        <article class="beer-box">
             <section class="special-beer">
                 <a href="lakrids-aboutpage.html"><h2 class="can-names" id="lakrids-h2">Lakrids</h2></a>
                 <a href="lakrids-aboutpage.html"><img class="can-img lakrids" src="img/lakrids.webp" alt="Lakrids øldåse"></a>
                 <a href="lakrids-aboutpage.html"><h3 class="special-description" id="lakrids-h3">Specialøl m. Lakrids 0,0%</h3></a>
                 <h4>16 kr.</h4>
-                <button class="mulighedsknapper" onclick="visLaKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="lakrids-pil"></button>
+                <button class="mulighedsknapper" onclick="visLaKnapper()"><img src="img/arrowhead-up.svg" alt="pilehoved" id="lakrids-pil"></button>
             </section>
             
-            <article class="quantity-box" id="lakrids-knapper">
-                <div class="quantity-item">
+            <section class="quantity-box" id="lakrids-knapper">
+                <aside class="quantity-item">
                 <!-- Enkelt dåse -->
                     <img src="./img/1can.png" alt="Enkelt dåse" class="can-icon">
                     <p>1 stk.</p>
@@ -122,7 +122,7 @@
                 
                     <input type="number" id="lakrids-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
                 </div>
-                </div>
+                </aside>
                 <!-- 6-pack -->
                 <div class="quantity-item">
                     <img src="./img/6pack.png" alt="6-pack" class="pack6-icon">
@@ -142,12 +142,13 @@
                     <div class="quantity-controls">                    
                         <button class="btn-plus-enkelt" onclick="shopAddTFToCart('lakrids-ramme');">+</button>
                         <input type="number" name="lakrids" id="lakrids-ramme" value="0"  class="form-control" disabled>
-                    <button class="btn-minus-enkelt" onclick="shopRemoveTFFromCart('lakrids-ramme');">-</button>
+                        <button class="btn-minus-enkelt" onclick="shopRemoveTFFromCart('lakrids-ramme');">-</button>
                 
-                    <input type="number" id="lakrids-ramme-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                        <input type="number" id="lakrids-ramme-total" value="0" class="enkelt-produkt-pris" disabled><!--denne skal forblive usynlig i css(.enkelt-produkt-pris)-->
+                    </div>
                 </div>
-            </article>
-        </div>
+            </section>
+        </article>
 
         <div class="beer-box">
             <section class="special-beer">
@@ -155,7 +156,7 @@
                 <a href="ingefaer-aboutpage.html"><img class="can-img ginger" src="img/ginger.webp" alt="Ingefær øldåse"></a>
                 <a href="ingefaer-aboutpage.html"><h3 class="special-description" id="ginger-h3">Specialøl m. Ingefær 0,0%</h3></a>
                 <h4>16 kr.</h4>
-                <button class="mulighedsknapper" onclick="visInKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="ingefaer-pil"></button>
+                <button class="mulighedsknapper" onclick="visInKnapper()"><img src="img/arrowhead-up.svg" alt="pilehoved" id="ingefaer-pil"></button>
             </section>
 
             <article class="quantity-box" id="ingefaer-knapper">
@@ -205,7 +206,7 @@
                 <a href="citron-aboutpage.html"><img class="can-img citron" src="img/citron.webp" alt="Citron øldåse"></a>
                 <a href="citron-aboutpage.html"><h3 class="special-description" id="citron-h3">Specialøl m. Citron 0,0%</h3></a>
                 <h4>16 kr.</h4>
-                <button class="mulighedsknapper" onclick="visCiKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="citron-pil"></button>
+                <button class="mulighedsknapper" onclick="visCiKnapper()"><img src="img/arrowhead-up.svg" alt="pilehoved" id="citron-pil"></button>
             </section>
 
             <article class="quantity-box" id="citron-knapper">
@@ -259,7 +260,7 @@
                 <a href="hyldeblomst.aboutpage.html"><img class="can-img hyldeblomst" src="img/hyldeblomst.webp" alt="Hyldeblomst øldåse"></a>
                 <a href="hyldeblomst.aboutpage.html"><h3 class="special-description" id="hyldeblomst-h3">Specialøl m. Hyldeblomst 0,0%</h3></a>
                 <h4>16 kr.</h4>
-                <button class="mulighedsknapper" onclick="visHylKnapper()"><img src="img/arrowhead-up-svgrepo-com (1).svg" alt="pilehoved" id="hyldeblomst-pil"></button>
+                <button class="mulighedsknapper" onclick="visHylKnapper()"><img src="img/arrowhead-up.svg" alt="pilehoved" id="hyldeblomst-pil"></button>
             </section>
 
             <article class="quantity-box" id="hyldeblomst-knapper">
