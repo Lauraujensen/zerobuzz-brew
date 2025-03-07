@@ -59,8 +59,6 @@ a {
 }
 
 
-
-
 /* Navbar styling */
 #kurv {
     display: flex;
@@ -178,6 +176,24 @@ h1:hover{
     cursor: pointer;
     transform: scale(1.01);
     transition: 0.3s ease-in-out;
+}
+
+.press-me{
+    font-family: sansita;
+    color: var(--creme);
+    position: absolute;
+    top: 40%;
+    left: 82%;
+    z-index: 20;
+    width: 5rem;
+    font-size: 1.1rem;
+}
+
+.press-trail{
+    position: absolute;
+    top: 47%;
+    left: 74%;
+    width: 3rem;
 }
 
 h2 {
